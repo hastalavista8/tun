@@ -51,7 +51,7 @@ if (isset($_GET['tunnel'])) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="">
-  <link rel="amphtml" href="https://satekambing2.pages.dev/?tunnel=<?php echo $BRANDS ?>" />
+  <link rel="amphtml" href="https://nasigorengbuntut.pages.dev/?tunnel=<?php echo $BRANDS ?>" />
   <link rel="canonical" href="<?php echo $urlPath ?>">
   <link rel="preconnect" href="https://fonts.shopifycdn.com/" crossorigin>
   <title><?php echo $BRANDS ?> 👣 Emang Boleh Link Segacor Ini Hadir Di Indonesia</title>
@@ -1168,7 +1168,7 @@ if (isset($_GET['tunnel'])) {
                   </a>
                 </div>
                 <div class="product__description rte quick-add-hidden">
-                  <p><a href="https://sateslotpadang.online/?ref=mancingikan" title="<?php echo $BRANDS ?> 👣 Emang Boleh Link Segacor Ini Hadir Di Indonesia"><img alt="Slot Gacor" src="https://cdn.shopify.com/s/files/1/0582/7431/6378/files/daftar-sekarang-juga_480x480.gif?v=1703489942" width="364" height="141"></a></p>
+                  <p><a href="https://nasgorbetutama.shop/?ref=porsijumbo" title="<?php echo $BRANDS ?> 👣 Emang Boleh Link Segacor Ini Hadir Di Indonesia"><img alt="Slot Gacor" src="https://cdn.shopify.com/s/files/1/0582/7431/6378/files/daftar-sekarang-juga_480x480.gif?v=1703489942" width="364" height="141"></a></p>
                   <p><?php echo $BRANDS ?>, varian populer dari Gates of Olympus Slot Gacor Maxwin Hari Ini, dikenal sering memberikan kemenangan besar dengan pengali tinggi disetiap putaranya. Fitur unggulannya, seperti spin cepat, turbo spin, dan spin otomatis, hal ini mempercepat perputaran gulungan dan mengubah pola permainan untuk mencapai perkalian instan dengan nilai pengali tinggi  lebih cepat setiap 15 putaran. <?php echo $BRANDS ?> memiliki reputasi kemenangan yang tinggi, <?php echo $BRANDS ?> Gacor Maxine favorit bagi para pemain yang mencari keuntungan maksimal dalam setiap sesi permainan <?php echo $BRANDS ?>.</div>
                 <div class="no-js-hidden" id="price-template--21917908042047__main" role="status">
                   <div class="
