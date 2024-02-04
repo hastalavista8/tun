@@ -1,1639 +1,1002 @@
-
-
-<!DOCTYPE html>
-<html lang="en">
+<style type="text/css">
+    .st0 {
+        fill:#f9d0aa;
+    }
+</style>
+    
+<!doctype html>
+<html lang="id">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    
+	 <meta name='viewport' content='width=device-width, initial-scale=0.6, user-scalable=0'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Pemerintah Kabupaten Banjar, Portal Pemerintah Kabupaten Banjar, Banjarkab, Maju Mandiri dan Agamis">
+    <meta name="Author" content="Pemerintah Kabupaten Banjar">
+    <meta name="keywords" content="banjar, kabupaten banjar, pemerintah kabupaten banjar, martapura" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="csrf-token" content="DpnlZGLH9czElueeiToQlIHffFOaGQEbRgWxNbo8" />
+    <!-- Title -->
+    <title>PORTAL KABUPATEN BANJAR</title>
 
-    <title>JDIH KABUPATEN BANJAR</title>
+	 <link rel="shortcut icon" href="https://banjarkab.go.id/favicon.ico" type="image/x-icon" />
+	 <link rel="apple-touch-icon" sizes="180x180" href="https://banjarkab.go.id/apple-touch-icon.png">
+	 <link rel="icon" type="image/png" sizes="32x32" href="https://banjarkab.go.id/favicon-32x32.png">
+	 <link rel="icon" type="image/png" sizes="16x16" href="https://banjarkab.go.id/favicon-16x16.png">
+	 <link rel="manifest" href="https://banjarkab.go.id/site.webmanifest">
+	 <link rel="canonical" href="https://banjarkab.go.id">
 
-    <!-- Favicon -->
-    <link rel="icon" href="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/logo_banjar.png" type="image/x-icon" />
-    <!-- Bootstrap CSS -->
-    <link href="https://jdih.banjarkab.go.id/assets/frontend_ildis/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Animate CSS -->
-    <link href="https://jdih.banjarkab.go.id/assets/frontend_ildis/vendors/animate/animate.css" rel="stylesheet">
-    <!-- Icon CSS-->
-	<link rel="stylesheet" href="https://jdih.banjarkab.go.id/assets/frontend_ildis/vendors/font-awesome/css/font-awesome.min.css">
-    <!-- Camera Slider -->
-    <link rel="stylesheet" href="https://jdih.banjarkab.go.id/assets/frontend_ildis/vendors/camera-slider/camera.css">
-    <!-- Owlcarousel CSS-->
-	<link rel="stylesheet" type="text/css" href="https://jdih.banjarkab.go.id/assets/frontend_ildis/vendors/owl_carousel/owl.carousel.css" media="all">
+    <!-- Bootstrap Css -->
+    <link href="https://banjarkab.go.id/assets/plugins/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Dashboard Css -->
+    <link href="https://banjarkab.go.id/assets/css/style.css" rel="stylesheet" />
+    <!-- Font-awesome  Css -->
+    <link href="https://banjarkab.go.id/assets/css/icons.css" rel="stylesheet" />
+        <!-- Data table css -->
+    <link href="https://banjarkab.go.id/assets/plugins/datatable/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    <link href="https://banjarkab.go.id/assets/plugins/datatable/jquery.dataTables.min.css" rel="stylesheet" />
+    <!--Select2 Plugin -->
+    <link href="https://banjarkab.go.id/assets/plugins/select2/select2.min.css" rel="stylesheet" />
+    <!-- Cookie css -->
+    
+    <!-- Owl Theme css-->
+    <link href="https://banjarkab.go.id/assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" />
 
-    <!--Theme Styles CSS-->
-	<link rel="stylesheet" type="text/css" href="https://jdih.banjarkab.go.id/assets/frontend_ildis/css/style.css" media="all" />
+	 
 
-    <link rel="stylesheet" href="https://jdih.banjarkab.go.id/assets/select2/css/select2.min.css" type="text/css"/>
+	 <link type="text/css" href="https://banjarkab.go.id/css/font-google.css" rel="stylesheet" />
 
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.min.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
+    <link href="https://banjarkab.go.id/assets/css/custom.css" rel="stylesheet" />
+    <!-- Color Skin -->
+    <link id="theme" rel="stylesheet" type="text/css" media="all"href="https://banjarkab.go.id/assets/color-skins/color-skins/color2.css" />
+    <script> var BASE_URL = "https:\/\/banjarkab.go.id";</script>
+	 <script> 
+	 	var URL_KEL_SEKUMPUL = "http://layanan.banjarkab.go.id/kelurahansekumpul";
+		 var wbackground = "#143f70";
+		 var wtulisan = "#f9d0aa";
+		 var wborder = "1px solid #2d5a89";
+	</script>
+	 
 
-    <link rel="stylesheet" href="https://jdih.banjarkab.go.id/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" type="text/css"/>
-
-<!-- -------------- -->
-    <!-- jQuery JS -->
-    <script src="https://jdih.banjarkab.go.id/assets/frontend_ildis/js/jquery-1.12.0.min.js"></script>
-<!-- -------------- -->
-
-    <script src="https://jdih.banjarkab.go.id/assets/libs/datatables/media/js/jquery.dataTables.min.js"></script>
-    <script src="https://jdih.banjarkab.go.id/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
-    <script src="https://jdih.banjarkab.go.id/assets/html/scripts/plugins/datatable.js"></script>
-
-    <script type="text/javascript">
-        $(function () {
-            $('#example1').DataTable({});
-
-            $('#example2').DataTable({
-                "lengthMenu": [[-1, 25, 50, 10], ["All", 10, 25, 50]]
-            });
-            $('#example3').DataTable({});
-            $('#example4').DataTable({});
-            $('#example5').DataTable({});
-
-            $('#yahoo').DataTable({});
-        });
-    </script>
+	
 </head>
-<body>
-    <!-- Preloader -->
-    <div class="preloader"><div class="iconnya"></div></div>
 
-	<!-- Top Header_Area -->
-	<section class="top_header_area">
-	    <div class="container" id="headText" >
-            <ul class="nav navbar-nav top_nav">
-                <li><a href="#"><i class="fa fa-comments-o"></i>Pusat Dokumentasi dan Jaringan Informasi Hukum Nasional</a></li>
-                <!-- <li><a href="#"><i class="fa fa-envelope-o"></i>info@thethemspro.com</a></li>
-                <li><a href="#"><i class="fa fa-clock-o"></i>Mon - Sat 12:00 - 20:00</a></li> -->
-            </ul>
-            <ul class="nav navbar-nav top_nav navbar-right" style="">
-                <!-- <li><a href="#" class="nav-kanan"><i class="fa fa-globe" aria-hidden="true"></i>Portal Resmi BPHN - Kemenkumham R.I</a></li> -->
-                <!-- <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li> -->
-            </ul>
-	    </div>
-	</section>
-  <section class="top_header_area2">
-	    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
-                <div class="col-lg-2 col-xs-2 nav-logo">
-                    <img class="img-responsive" src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/logo_jdihn-banjar.png" style="height:50px; min-height:40px; width:100px; min-width:80px; margin-top:12pt;">
-                </div>
-                <div class="col-lg-10 col-xs-10 nav-text">
-                    <h4>Selamat Datang di Website JDIH<br>Kabupaten Banjar</h4>
-                </div>
-            </a>
-        </div>
-	    </div>
-	</section>
-	<!-- End Top Header_Area -->
 
-	<!-- navbar_Area -->
-    <nav class="navbar navbar-default header_aera" data-spy="affix" data-offset-top="125" style="opacity:0.95;">
-        <div class="container">
-            <div class="col-md-0 p0">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#min_navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+
+  
+ <body style="font-family: 'Quicksand', sans-serif !important; " class="main-body section-first bg-background-6" data-vidbg-bg="mp4: https://banjarkab.go.id/storage/banjar.mp4, poster: https://banjarkab.go.id/assets/video/video-img.jpg') }}" data-vidbg-options="loop: true, muted: true, overlay: true">   
+     <!-- Modal -->
+    <div class="modal fade" id="portal-subdomain" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			 <div class="modal-content">
+				  <div class="modal-header" style="background: #143f70 !important">
+						<h5 class="modal-title card-title text-brown"><i class="fa fa-edge"></i> Website Pemerintah Kabupaten Banjar</h5>
+							 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								  <span aria-hidden="true">&times;</span>
+							 </button>
+				  </div>
+				  <div class="modal-body">
+						<table class="table datatable table-striped table-hover display compact">
+							 <thead>
+								  <tr>
+										<th>NO.</th>
+										<th>INSTANSI</th>
+										<th>DINAS/LTD/KECAMATAN/KELURAHAN</th>
+								  </tr>
+							 </thead>
+							 <tbody>
+								  								  										<tr>
+											 <td>1</td>
+											 <td> <a class="text-dark" href="https://bkdpsdm.banjarkab.go.id" target="_blank">Badan Kepegawaian Daerah dan Pengembangan Sumber Daya Manusia</a></td>
+											 <td>LTD</td>
+										</tr>
+								  										<tr>
+											 <td>2</td>
+											 <td> <a class="text-dark" href="https://kesbangpol.banjarkab.go.id" target="_blank">Badan Kesatuan Bangsa dan Politik</a></td>
+											 <td>LTD</td>
+										</tr>
+								  										<tr>
+											 <td>3</td>
+											 <td> <a class="text-dark" href="https://bpbd.banjarkab.go.id" target="_blank">Badan Penanggulangan Bencana</a></td>
+											 <td>LTD</td>
+										</tr>
+								  										<tr>
+											 <td>4</td>
+											 <td> <a class="text-dark" href="http://bapenda.banjarkab.go.id" target="_blank">Badan Pendapatan Daerah</a></td>
+											 <td>LTD</td>
+										</tr>
+								  										<tr>
+											 <td>5</td>
+											 <td> <a class="text-dark" href="https://bpkad.banjarkab.go.id" target="_blank">Badan Pengelolaan Keuangan dan Asset Daerah</a></td>
+											 <td>LTD</td>
+										</tr>
+								  										<tr>
+											 <td>6</td>
+											 <td> <a class="text-dark" href="https://bappelitbang.banjarkab.go.id" target="_blank">Badan Perencanaan Pembangunan, Penelitian dan Pengembangan Daerah</a></td>
+											 <td>LTD</td>
+										</tr>
+								  										<tr>
+											 <td>7</td>
+											 <td> <a class="text-dark" href="https://bkdpsdm.banjarkab.go.id/diklatpsdm" target="_blank">Bagian Diklat Badan Kepegawaian Daerah dan Pengembangan Sumber Daya</a></td>
+											 <td>LTD</td>
+										</tr>
+								  										<tr>
+											 <td>8</td>
+											 <td> <a class="text-dark" href="https://hukum.banjarkab.go.id" target="_blank">Bagian Hukum </a></td>
+											 <td>Sekretariat</td>
+										</tr>
+								  										<tr>
+											 <td>9</td>
+											 <td> <a class="text-dark" href="https://organisasi.banjarkab.go.id" target="_blank">Bagian Organisasi</a></td>
+											 <td>Sekretariat</td>
+										</tr>
+								  										<tr>
+											 <td>10</td>
+											 <td> <a class="text-dark" href="https://prokopim.banjarkab.go.id" target="_blank">Bagian Protokol dan Komunikasi Pimpinan</a></td>
+											 <td>Sekretariat</td>
+										</tr>
+								  										<tr>
+											 <td>11</td>
+											 <td> <a class="text-dark" href="https://disbudpar.banjarkab.go.id" target="_blank">Dinas Kebudayaan dan Pariwisata </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>12</td>
+											 <td> <a class="text-dark" href="https://disdukcapil.banjarkab.go.id" target="_blank">Dinas Kependudukan dan Pencatatan Sipil</a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>13</td>
+											 <td> <a class="text-dark" href="https://dinkes.banjarkab.go.id" target="_blank">Dinas Kesehatan </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>14</td>
+											 <td> <a class="text-dark" href="https://dkp.banjarkab.go.id" target="_blank">Dinas Ketahanan Pangan </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>15</td>
+											 <td> <a class="text-dark" href="https://kominfo.banjarkab.go.id" target="_blank">Dinas Komunikasi, Informasi, Statistik dan Persandian </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>16</td>
+											 <td> <a class="text-dark" href="https://koperasium.banjarkab.go.id" target="_blank">Dinas Koperasi, Usaha Mikro Kecil dan Menengah</a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>17</td>
+											 <td> <a class="text-dark" href="https://dlh.banjarkab.go.id" target="_blank">Dinas Lingkungan Hidup </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>18</td>
+											 <td> <a class="text-dark" href="https://pupr.banjarkab.go.id" target="_blank">Dinas Pekerjaan Umum dan Penataan Ruang </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>19</td>
+											 <td> <a class="text-dark" href="https://dpmd.banjarkab.go.id" target="_blank">Dinas Pemberdayaan Masyarakat dan Desa </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>20</td>
+											 <td> <a class="text-dark" href="https://dpmptsp.banjarkab.go.id" target="_blank">Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>21</td>
+											 <td> <a class="text-dark" href="https://disdik.banjarkab.go.id" target="_blank">Dinas Pendidikan </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>22</td>
+											 <td> <a class="text-dark" href="https://dp2kbp3a.banjarkab.go.id" target="_blank">Dinas Pengendalian Penduduk, Keluarga Berencana, , Pemberdayaan Perempuan dan Perlindungan Anak </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>23</td>
+											 <td> <a class="text-dark" href="https://dishub.banjarkab.go.id" target="_blank">Dinas Perhubungan </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>24</td>
+											 <td> <a class="text-dark" href="https://perikanan.banjarkab.go.id" target="_blank">Dinas Perikanan </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>25</td>
+											 <td> <a class="text-dark" href="https://disperindag.banjarkab.go.id" target="_blank">Dinas Perindustrian dan Perdagangan</a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>26</td>
+											 <td> <a class="text-dark" href="https://dpk.banjarkab.go.id" target="_blank">Dinas Perpustakaan dan Kearsipan </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>27</td>
+											 <td> <a class="text-dark" href="https://dispertanahan.banjarkab.go.id" target="_blank">Dinas Pertanahan </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>28</td>
+											 <td> <a class="text-dark" href="https://disperkim.banjarkab.go.id" target="_blank">Dinas Perumahan dan Permukiman </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>29</td>
+											 <td> <a class="text-dark" href="https://disnakbun.banjarkab.go.id" target="_blank">Dinas Peternakan dan Perkebunan </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>30</td>
+											 <td> <a class="text-dark" href="https://dinsos.banjarkab.go.id" target="_blank">Dinas Sosial </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>31</td>
+											 <td> <a class="text-dark" href="https://dtph.banjarkab.go.id" target="_blank">Dinas Tanaman Pangan dan Hortikultura </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>32</td>
+											 <td> <a class="text-dark" href="https://disnaker.banjarkab.go.id" target="_blank">Dinas Tenaga Kerja dan Transmigrasi </a></td>
+											 <td>Dinas</td>
+										</tr>
+								  										<tr>
+											 <td>33</td>
+											 <td> <a class="text-dark" href="https://kec.astambul.banjarkab.go.id" target="_blank">Kecamatan Astambul</a></td>
+											 <td>Kecamatan</td>
+										</tr>
+								  										<tr>
+											 <td>34</td>
+											 <td> <a class="text-dark" href="https://komdalansia.banjarkab.go.id" target="_blank">Komisi Nasional Lanjut Usia </a></td>
+											 <td>Komisi</td>
+										</tr>
+								  										<tr>
+											 <td>35</td>
+											 <td> <a class="text-dark" href="https://kpu.banjarkab.go.id" target="_blank">Komisi Pemilihan Umum Kabupaten Banjar </a></td>
+											 <td>Komisi</td>
+										</tr>
+								  							 </tbody>
+						</table>
+				  </div>
+				  <div class="modal-footer">
+						<span class="float-left">* LTD : Lembaga Teknis Daerah</span>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+				  </div>
+			 </div>
+		</div>
+  </div>
+  <!--Header Main-->
+	<div class="header-main">
+
+		
+ 		<!--Top Bar-->
+		<div class="top-bar" style="background: #143f70 !important; border-bottom: 1px solid #143f70 !important">
+			 <div class="container">
+				  <div class="row">
+					<div class="col-xl-5 col-lg-5 col-sm-4 col-5">
+						<div class="top-bar-left d-flex">
+							<div class="clearfix">
+								<ul class="socials">
+									<li class="text-left">
+										<b><a href="https://banjarkab.go.id" class="" style="color:#f9d0aa"><i class="fa fa-home mr-1" style="color:#f9d0aa"></i> <span>PORTAL PEMERINTAH KABUPATEN BANJAR</span></a></b>
+									</li>
+							</ul>
+							</div>
+						</div>
+				  </div>
+						<div class="col-xl-7 col-lg-7 col-sm-8 col-7"">
+							 <div class="top-bar-right">
+								  <ul class="custom">
+										
+										<li>
+											 <a href="https://banjarkab.go.id/antrian" class="" style="color:#f9d0aa" target="_blank"><i class="fa fa-user mr-1" style="color:#f9d0aa"></i> <span><b>ANTRIAN MPP</b></span></a>
+										</li>
+										<li>
+											 <a href="https://home.banjarkab.go.id/sakip-lakip" class="" style="color:#f9d0aa" target="_blank"><i class="fa fa-file-archive-o mr-1" style="color:#f9d0aa"></i> <span><b>DOKUMEN</b></span></a>
+										</li>
+										<li class="dropdown ">
+											 <a href="#" data-toggle="modal" data-target="#portal-subdomain" style="color:#f9d0aa"><i class="fa fa-edge mr-1" style="color:#f9d0aa"></i><span>
+											 <b>SUB DOMAIN</b></span></a>
+										</li>
+										<li><a class="dropdown-icon icon full-screen-link"><i class="fe fe-maximize-2" id="fullscreen-button" style="color: #f9d0aa"></i></a></li>
+								  </ul>
+							 </div>
+						</div>
+				  </div>
+			 </div>
+		</div>
+
+		
+  </div> 
+  <!--/Header Main-->
+    <!--Loader-->
+    <div id="global-loader">
+        <img src="https://banjarkab.go.id/assets/images/loader.svg" class="loader-img" alt="">
+	 </div>
+	 
+	 	     <!-- Modal HTML -->
+				<div id="videoModal" class="modal fade">
+					<div class="modal-dialog modal-xl">
+						 <div class="modal-content">
+							  <div class="modal-header">
+									<h5 class="modal-title">Video Informasi</h5>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+							  </div>
+							  <div class="modal-body" style="padding: 0 !important">
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe id="container-video" class="embed-responsive-item" width="560" height="315"  allowfullscreen  frameborder="0" allow="autoplay; encrypted-media"></iframe>
+									</div>
+							  </div>
+						 </div>
+					</div>
+			  </div>
+	 
+    <!-- Popup Intro-->
+    <div id="modal-intro" class="modal fade">
+		<div class="modal-dialog modal-lg" role="document" >
+			 <div class="modal-content"  style="background:none;border-radius: 10px;">
+				  <div class="modal-header border-bottom-0">
+						<a href="javascript:void(0);" class="close btn btn-sm" data-dismiss="modal" aria-label="Close" style="background: #143f70; line-height:37px; font-size:17px; border:none; position:absolute; z-index:1">
+							 <i class="fa fa-1x fa-close text-brown"></i>
+						</a>
+				  </div>
+				  <div class="modal-body" >
+					<div id="popupcarousel" class="owl-carousel testimonial-owl-carousel4">
+													 							  																  																		  <div class="item text-center">
+										  <div class="row">
+											  <div class="col-xl-12 col-md-12 d-block mx-auto">
+											  <h3 class="text-brown"><b></b></h3>
+												  <div class="testimonia text-center">
+														  																  <img src="https://banjarkab.go.id/assets/images/intro/65a5ffd79b948.WhatsApp Image 2024-01-15 at 6.47.24 PM.jpeg" class="w-100 h-100 mb-3 mx-auto text-center" alt="">
+														  														  <h5 class="text-brown"></h5>
+												  </div>
+											  </div>
+										  </div>
+									  </div>
+
+								
+								  							  										  </div>
+				  </div>
+			 </div>
+		</div>
+  </div>
+  <!-- End Popup Intro-->
+
+
+	
+    <!-- Modal layanan -->
+    <div id="modal-portal" class="modal fade">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="background: #143f70">
+                <div class="modal-header pd-x-20 border-bottom-0 ">
+                    <h2 class="modal-title font-weight-bold" style="text-transform: capitalize; color: #f9d0aa"></h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+                <div class="modal-body" style="padding:0.3rem 1rem 2rem 1rem">
+                    <div id="modal-portal-list">
+                    </div>
+                </div><!-- modal-body -->
             </div>
-            <div class="col-md-12 p0">
-                <div class="collapse navbar-collapse" style="height: 80px!important;" id="min_navbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown submenu">
-                            <a href="https://jdih.banjarkab.go.id"  >BERANDA</a>
-
-
-                        </li>
-                        <li class="dropdown submenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">TENTANG KAMI</a>
-                            <ul class="dropdown-menu other_dropdwn">
-                                <li><a href="https://jdih.banjarkab.go.id/index_sejarah">Sejarah JDIH</a></li>
-                                <li><a href="https://jdih.banjarkab.go.id/makna_logo">Makna Logo JDIHN</a></li>
-                                <li><a href="https://jdih.banjarkab.go.id/visi_misi">Visi dan Misi JDIH</a></li>
-                                <li><a href="https://jdih.banjarkab.go.id/dasar_hukum">Dasar Hukum JDIH Kab. Banjar</a></li>
-                                <li><a href="https://jdih.banjarkab.go.id/sop">SOP JDIH Kab. Banjar</a></li>
-                                <li><a href="https://jdih.banjarkab.go.id/struktur_organisasi">Struktur Organisasi JDIH Kab. Banjar</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown submenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">DOKUMEN</a>
-                            <ul class="dropdown-menu other_dropdwn">
-                                <li><a href="https://jdih.banjarkab.go.id/pencarian?jenis_peraturan=56">Peraturan Daerah</a></li>
-                                <li><a href="https://jdih.banjarkab.go.id/pencarian?jenis_peraturan=62">Peraturan Bupati</a></li>
-                                <li><a href="https://jdih.banjarkab.go.id/sk_bupati_toggle">Daftar Keputusan Bupati</a></li>
-                                <li><a href="https://jdih.banjarkab.go.id/sk_sekda_toggle">Daftar Keputusan Sekda</a></li>
-                                <li><a href="https://jdih.banjarkab.go.id/propemperda_toggle">Propemperda</a></li>
-                                <li><a href="https://jdih.banjarkab.go.id/inbup_toggle">Instruksi Bupati</a></li>
-                                <li><a href="https://jdih.banjarkab.go.id/se_toggle">Surat Edaran Bupati</a></li>
-                                <li><a href="https://jdih.banjarkab.go.id/pencarian?jenis_peraturan=105">Memorandum of Understanding</a></li>
-                                <li><a href="https://jdih.banjarkab.go.id/pencarian?jenis_peraturan=76">Naskah Akademik</a></li>
-                                <li><a href="https://jdih.banjarkab.go.id/abstraksi">Abstraksi</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown submenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">INFORMASI</a>
-                            <ul class="dropdown-menu other_dropdwn">
-                                <li><a href="https://jdih.banjarkab.go.id/berita_toggle">Berita</a></li>
-                                <li><a href="https://jdih.banjarkab.go.id/kegiatan_toggle">Kegiatan Bagian Hukum</a></li>
-                            </ul>
-                        </li>
-                        <!--<li class="dropdown submenu">-->
-                        <!--    <a href="https://jdih.banjarkab.go.id/berita_toggle">BERITA</a>-->
-                        <!--</li>-->
-                        <!--<li class="dropdown submenu">-->
-                        <!--    <a href="https://jdih.banjarkab.go.id/kegiatan_toggle">KEGIATAN</a>-->
-                        <!--</li>-->
-                        <li class="dropdown submenu">
-                            <a href="https://jdih.banjarkab.go.id/bukuhukum_toggle">BUKU HUKUM</a>
-                        </li>
-                        <!--<li class="dropdown submenu">-->
-                        <!--    <a href="https://jdih.banjarkab.go.id/pencarian?tipe_dokumen=1">CARI PERATURAN</a>-->
-                        <!--</li>-->
-                        
-                    </ul>
-                    <ul class="nav navbar-nav uli" style="float:right;">
-                      <li class="li-search" >
-                        <form action="https://jdih.banjarkab.go.id/pencarian" class="row m0" method="get">
-                            <input id="my_search" type="search" name="q" class="form-control" placeholder="Search..." autocomplete="off">
-                        </form>
-                      </li>
-                    </ul>
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->
+    <!-- Modal Login Pemerintahan -->
+    <div id="modal-login" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background: #143f70; border: 1px solid #2d5a89">
+                <div class="modal-header pd-x-20 border-bottom-0 ">
+                    <h2 class="modal-title font-weight-bold " style="text-transform: capitalize;  color: #f9d0aa"><span class="fa fa-lock"></span> LOGIN</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-            </div>
-        </div>
-    </nav>
-	<!-- End Header_Area -->
-
-      
-<!-- start popup -->
-    <section class="our_partners_area" style="background-image:url('https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/lowpolly.jpg'); background-repeat: no-repeat;">
-    <!-- CSS Banner -->
-    <style>
-        .content-slider{
-            max-width:592px;
-            position:relative;
-            margin:auto;
-        }
-        
-        .imgslide{
-            display:block;
-        }
-
-        .imgs{
-            /* object-fill: cover;  */
-            /* margin-bottom:10px;  */
-            vertical-align:middle;
-            width: 592px; height: 350px; 
-        }
-
-        .prev, .next{
-            cursor:pointer;
-            position:absolute;
-            top:40%;
-            width:auto;
-            padding:16px;
-            color:rgb(255,254,224);
-            font-weight:bold;
-            font-size:18px;
-            transition:0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select:none;
-            background-color: rgba(0,0,0,0.8);
-            transition: 0.3s;
-        }
-
-        .next{
-            right:0;
-            border-radius: 3px 0 0 3px;
-        }
-        
-        .prev{
-            left:0;
-            /* border-radius: 3px 0 0 3px; */
-        }
-
-        .prev:hover, .next:hover{
-            background-color: rgba(255,255,255,0.8);
-            color: rgb(0,0,0);
-        }
-
-        /* .content-slider .numberslide{
-            color:#ffffff;
-            font-size:12px;
-            padding:8px 12px;
-            position:absolute;
-            top:0;
-        } */
-
-        .fades{
-            -webkit.animation-name:fade;
-            -webkit.animation-duration:1.5s;
-            animation-name:fade;
-            animation-duration:1.5s;
-        }
-
-        @-webkit-keyframes fades{
-            from{
-                opacity:.4;
-            }
-            to{
-                opacity:1;
-            }
-        }
-
-        @keyframes  fades{
-            from{
-                opacity:.4;
-            }
-            to{
-                opacity:1;
-            }
-        }
-        
-        .container .pages{
-            text-align:center;
-            padding-top:20px;
-        }
-
-        .pages .dot{
-            cursor:pointer;
-            height:15px;
-            width:15px;
-            margin:0 2px;
-            background-color:#bbb;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-            border-radius: 50%;
-        }
-
-        .pages .active,
-        .pages .dot:hover{
-            background-color:#ce0000;
-        }
-    </style>
-    <!-- END CSS Banner -->
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 text-center">
-                        <!-- <div class="row about_row text-center"> -->
-                            <!-- <center>
-                                <img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/banner.png" class="img-responsive" style="object-fill: cover; margin-bottom:10px; height: 350px;">
-                            </center> -->
-                        <!-- </div> -->
-                        <center>
-                            <div class="content-slider">
-
-                                <div class="imgslider fades">
-                                    <img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/foto0.png" class="img-responsive imgs">
+                <hr class="m-0">
+                <div class="modal-body" style="padding:0rem">
+                    <!--Page-->
+                            <div class="page-content z-index-10 mt-0">
+                                    <div class="row">
+                                        <div class="col-md-12 col-md-12 d-block mx-auto">
+                                            <div class="card mb-0" style="background:none; border:0">
+                                                <div class="card-header" style="margin: 0 auto; border: none;">
+                                                    <h3 class="card-title" style="font-size:18px;  color: #f9d0aa"><b>Masukkan NIP dan Password</b></h3>
+                                                </div>
+                                                <em class="text-center text-brown">Gunakan Password e-SIMPEG untuk dapat meneruskan link ini.</em>
+                                                <form action="https://banjarkab.go.id/portal/loginpegawai" id="form-login-pegawai" method="POST">
+                                                    <input type="hidden" name="_token" value="DpnlZGLH9czElueeiToQlIHffFOaGQEbRgWxNbo8">                                                    <div class="card-body">
+                                                        <div class="form-group">
+                                                            <input name="nip" type="text" class="form-control" placeholder="NIP" style="border:2px solid #ffdd9d; border-radius:10px;background:#fbffed" autocomplete="off">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input name="passw" type="password" class="form-control"  placeholder="Password" style="border:2px solid #ffdd9d; border-radius:10px;background:#fbffed" autocomplete="off">
+                                                        </div>
+                                                        <div class="form-footer mt-2">
+                                                            <button type="submit" class="btn btn-warning btn-block">MASUK</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
                                 </div>
-                                
-                                <div class="imgslider fades">
-                                    <img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/foto1.png" class="img-responsive imgs">
+                            </div>
+                </div><!-- modal-body -->
+            </div>
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->
+    <!-- Modal Login  Publik-->
+    <div id="modal-login-publik" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background: #143f70; border: 2px solid #368600 !important">
+                <div class="modal-header pd-x-20 border-bottom-0 ">
+                    <h2 class="modal-title font-weight-bold" style="text-transform: capitalize;  color: #f9d0aa"><span class="fa fa-lock"></span> LOGIN</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <hr class="m-0">
+                <div class="modal-body" style="padding:0rem">
+                    <!--Page-->
+                            <div class="page-content z-index-10 mt-0">
+                                    <div class="row">
+                                        <div class="col-md-12 col-md-12 d-block mx-auto">
+                                            <div class="card mb-0" style="background:none; border:0">
+                                                <div class="card-header" style="margin: 0 auto; border: none;">
+                                                    <h3 class="card-title" style="font-size:18px;  color: #f9d0aa"><b>Masukkan Nomor KK dan KTP </b></h3>
+                                                </div>
+                                                <form action="https://banjarkab.go.id/portal/loginpegawai" id="form-login" method="POST">
+                                                    <input type="hidden" name="_token" value="DpnlZGLH9czElueeiToQlIHffFOaGQEbRgWxNbo8">                                                    <div class="card-body">
+                                                        <div class="form-group">
+                                                            <input name="kk" type="text" class="form-control" placeholder="Nomor KK" style="border: 1px solid #2d5a89; border-radius:10px;background:#fbffed" autocomplete="off">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input name="ktp" type="text" class="form-control" placeholder="Nomor KTP/NIK" style="border: 1px solid #2d5a89; border-radius:10px;background:#fbffed" autocomplete="off">
+                                                        </div>
+                                                        <div class="form-footer mt-2">
+                                                            <button type="submit" class="btn btn-success btn-block">MASUK</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
                                 </div>
-                                
-                                <div class="imgslider fades">
-                                    <img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/foto2.png" class="img-responsive imgs">
+                            </div>
+                </div><!-- modal-body --></div>
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->
+    <!-- Modal Login  OpenSID-->
+    <div id="modal-login-kelurahan" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background: #143f70; border: 2px solid #368600 !important">
+                <div class="modal-header pd-x-20 border-bottom-0 ">
+                    <h2 class="modal-title font-weight-bold text-brown" style="text-transform: capitalize;  color: #f9d0aa"><span
+                            class="fa fa-lock"></span> LOGIN</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding:0rem">
+                    <!--Page-->
+                    <div class="page-content z-index-10 mt-0">
+                        
+                        <div class="row">
+                            <div class="col-md-12 col-md-12 d-block mx-auto">
+                                <div class="card mb-0" style="background:none; border:0">
+                                    <div class="card-header" style="margin: 0 auto; border: none;">
+                                        <h3 class="card-title" style="font-size:18px;  color:#649700"> <b>Masukkan NIK dan PIN</b> </h3>
+                                    </div>
+                                    <form  id="form-login-kelurahan" method="GET">
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <input id="login-kelurahan-nik" name="nik" type="text" class="form-control" placeholder="NIK" style="border:2px solid #368600; border-radius:10px;background:#fbffed" required autocomplete="off">
+                                            </div>
+                                            <div class="form-group">
+                                                <input  id="login-kelurahan-pin" class="form-control" name="pin" type="password" placeholder="PIN"  value="" style="border:2px solid #368600; border-radius:10px;background:#fbffed" required autocomplete="off">
+                                            </div>
+                                            <div class="form-footer mt-2">
+                                                <button type="submit" class="btn btn-lg btn-success btn-block">MASUK</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                                
-                                <div class="imgslider fades">
-                                    <img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/foto3.png" class="img-responsive imgs">
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- modal-body -->
+            </div>
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->
+    <!-- Modal Cek Status Perizinan -->
+    <div id="modal-cek-status-izin" class="modal fade">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="background: #143f70; border: 2px solid #475772  !important">
+                <div class="modal-header pd-x-20 border-bottom-0 ">
+                    <h3 class="modal-title font-weight-bold text-brown" style="text-transform: capitalize;"><span
+                            class="fa fa-lock"></span> CEK STATUS PROSES PERIZINAN</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <hr class="m-0">
+                <div class="modal-body" style="padding:0rem">
+                    <!--Page-->
+                    <div class="page-content z-index-10 mt-0">
+                        <div class="row">
+                            <div class="col-md-12 col-md-12 d-block mx-auto">
+                                <div class="card mb-0" style="background:none; border:0">
+                                    <div class="card-header" style="margin: 0 auto; border: none;">
+                                        <h3 class="card-title text-brown" style="font-size:18px;">
+                                            <b>Masukkan Nomor Pendaftaran Izin</b></h3>
+                                    </div>
+                                    <form  id="form-cek-izin" method="POST">
+                                        
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <input name="nomor_izin" type="text" class="form-control" placeholder="Nomor Perizinan contoh : 0057/SKTU-PB/VI/2015"  style="border:2px solid #ffdd9d; border-radius:10px;background:#fbffed" autocomplete="off">
+                                            </div>
+                                            <div id="cek-izin-body"></div>
+                                            <div class="form-footer mt-2">
+                                                <button type="submit" class="btn btn-warning btn-block">CEK</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-
-                                <a class="prev" onClick="nextslide(-1)">&#10094;</a>
-                                <a class="next" onClick="nextslide(1)">&#10095;</a>
-
-                            </div>
-
-                            <div class="pages" style="margin-bottom:10px;">
-                                <span class="dot" onClick="dotslide(1)"></span>
-                                <span class="dot" onClick="dotslide(2)"></span>
-                                <span class="dot" onClick="dotslide(3)"></span>
-                                <span class="dot" onClick="dotslide(4)"></span>
-                            </div>
-                        </center>
-                    </div>
-                </div>
-            </div>
-
-            <script>
-                // let start = 0;
-                var slideIndex=1;
-
-                    otomatis();
-                    showSlide(slideIndex);
-
-                function otomatis(){
-                    const sliders = document.querySelectorAll(".imgslider");
-                    var dot = document.getElementsByClassName("dot");
-
-                    for(let i=0; i < sliders.length; i++){
-                        sliders[i].style.display = "none";
-                        dot[i].className = dot[i].className.replace(" active","");
-                    }
-
-                    if(slideIndex >= sliders.length){
-                        slideIndex=0;
-                    }
-
-                    sliders[slideIndex].style.display = "block";
-                    dot[slideIndex].className += " active";
-                    slideIndex++;
-
-                    setTimeout(otomatis, 4000);
-                }
-
-                function nextslide(n){
-                    showSlide(slideIndex += n);
-                }
-
-                function dotslide(n){
-                    showSlide(slideIndex = n);
-                }
-                
-                function showSlide(n){
-                    var i;
-                    var slides = document.getElementsByClassName("imgslider");
-                    var dot = document.getElementsByClassName("dot");
-
-                    if(n > slides.length){
-                        slideIndex = 1
-                    }
-
-                    if(n < 1){
-                        slideIndex = slides.length;
-                    }
-
-                    for(i=0; i<slides.length; i++){
-                        slides[i].style.display = "none";
-                    }
-                    
-                    for(i=0; i<slides.length; i++){
-                        dot[i].className = dot[i].className.replace(" active","");
-                    }
-
-                    slides[slideIndex - 1].style.display = "block";
-                    dot[slideIndex - 1].className += " active";
-                }
-            </script>
-    </section>
-
-    <!-- inovasi -->
-    <section class="professional_builder row" id="inovasi">
-        <div class="container">
-
-           <div class="row builder_all">
-                <div class="col-md-12 col-sm-12 builder" style="color:white; text-align:center; margin-bottom:30px; ">
-                    <!-- <h3 style="color:white;" class="title">PESONA PARIWISATA KABUPATEN BANJAR</h3> -->
-                        
-                    <!-- <hr width="10%" style="color:white; border-width:7px; border-radius:10px;"> -->
-                    <a href="https://jdih.banjarkab.go.id/pencarian?tipe_dokumen=1" target="_blank"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/somasi.png" style="width: 795px; height: 288px;"></a>
-                </div>
-            </div>
-
-
-            <div class="row builder_all">    
-                <div class="col-md-12 col-sm-12 builder" style="color:white; text-align:center; margin-bottom:20px;">
-                    <a href="#popup_jahe"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/jahe-pagi.png" style="width: 795px; height: 288px;"></a>
-                </div>
-            </div>
-           
-        </div>
-
-        <!-- CSS JAHE -->
-        <style>
-            .popup_jahe{
-                width:100%;
-                height:100vh;
-                background-image: rgba(0,0,0, .8);
-                position:fixed;
-                top:0;
-                left:0;
-                z-index: 100;
-
-                opacity:0;
-                visibility:hidden;
-
-                transition:all .3s;
-            }
-
-            .popup__content{
-                width:50%;
-                background-image: url("https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/BG-pu.jpg");
-                box-shadow:0 20px 40px rgba(0,0,0, .2);
-
-                position:absolute;
-                top:50%;
-                left:50%;
-                transform: translate(-50%, -50%) scale(.25);
-                opacity:0;
-
-                transition:all .5s .1s;
-            }
-
-            .popup__header{
-                text-align:center;
-                text-transform:uppercase;
-                color:#555;
-                margin-bottom:20px;
-            }
-
-            .popup__text{
-                padding:0 36px;
-                line-height:1.4;
-            }
-
-            #popup_jahe:target{
-                opacity:1;
-                visibility:visible;
-            }
-
-            #popup_jahe:target .popup__content{
-                opacity:1;
-                transform: translate(-50%, -50%) scale(1);
-            }
-
-            .popup__close:link,
-            .popup__close:visited{
-                position:absolute;
-                top:12px;
-                right:20px;
-                text-decoration:none;
-                color:#000;
-                font-size:30px;
-                display:inline-block;
-                line-height:1;
-                transition:all .3s;
-            }
-
-            .popup__close:hover,
-            .popup__close:active{
-                color:#555;
-            }
-        </style>
-        <!-- ENDCSS JAHE -->
-
-                
-        <div class="popup_jahe" id="popup_jahe">
-            <div class="popup__content">
-                <div class="popup__header">
-                    <h3 style="padding-top:20px;">JAHE PAGI</h3>
-                    <h4>(Jadwal Harian Kegiatan Bagian Hukum)</h4>
-                    <h5 style="color:maroon;">Minggu, 04 Februari 2024</h5>
-                    <a href="https://jdih.banjarkab.go.id/jahe_viewer" class="popup__close">&times;</a>
-                </div>
-
-                <div class="popup__text">
-                    <table class="table table-bordered table-hover" style="margin-bottom:30px;">
-                        <tr>
-                            <th style="text-align:center;">NO</th>
-                            <th style="text-align:center;">ACARA</th>
-                            <th style="text-align:center;">WAKTU</th>
-                            <th style="text-align:center;">TEMPAT</th>
-                            <th style="text-align:center;">PENYELENGGARA</th>
-                        </tr>
-                        <!--<tr>-->
-                        <!--    <th style="text-align:center; background-color:maroon; color:white;" colspan="5">- NIHIL -</th>-->
-                        <!--</tr>-->
-                                                </table>
-                    
-                    <center>
-                        <i class="fa fa-clock-o"></i>0 &nbsp; &nbsp; <i class="fa fa-line-chart"></i>36
-                    </center>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End inovasi -->
-
-    <!-- PHD Terbaru -->
-    <section class="our_partners_area">
-        <div class="container">
-            <div class="tittle wow fadeInUp">
-                <h2>PERATURAN TERBARU</h2>
-            </div>
-            <div class="partners">
-                <!-- isi peraturan terbaru -->
-                                    <a href="https://jdih.banjarkab.go.id/pencarian/1095/detail"><p style="font-size:13px; background:#a9180b; color:white; width:200pt; text-align:center; padding:10pt 20pt; border-radius:10px;">Peraturan Daerah Kabupaten Banjar Nomor 5 Tahun 2023 ...</p></a>
-                    <br>
-                                    <a href="https://jdih.banjarkab.go.id/pencarian/1094/detail"><p style="font-size:13px; background:#a9180b; color:white; width:200pt; text-align:center; padding:10pt 20pt; border-radius:10px;">Peraturan Daerah Kabupaten Banjar Nomor 4 Tahun 2023 ...</p></a>
-                    <br>
-                                    <a href="https://jdih.banjarkab.go.id/pencarian/1093/detail"><p style="font-size:13px; background:#a9180b; color:white; width:200pt; text-align:center; padding:10pt 20pt; border-radius:10px;">Peraturan Daerah Kabupaten Banjar Nomor 3 Tahun 2023 ...</p></a>
-                    <br>
-                                    <a href="https://jdih.banjarkab.go.id/pencarian/1092/detail"><p style="font-size:13px; background:#a9180b; color:white; width:200pt; text-align:center; padding:10pt 20pt; border-radius:10px;">Peraturan Daerah Kabupaten Banjar Nomor 6 Tahun 2023 ...</p></a>
-                    <br>
-                                    <a href="https://jdih.banjarkab.go.id/pencarian/1091/detail"><p style="font-size:13px; background:#a9180b; color:white; width:200pt; text-align:center; padding:10pt 20pt; border-radius:10px;">Kesepakatan Bersama Antara Pemerintah Kabupaten Banja...</p></a>
-                    <br>
-                            </div>
-        </div>
-    </section>
-    <!-- End Our Partners Area -->
-
-    <!-- pencarian -->
-    <section class="professional_builder row">
-        <div class="container">
-           <div class="row builder_all">
-                <div class="col-md-1 col-sm-1"></div>
-
-                <div class="col-md-10 col-sm-10 builder" style="color:white">
-                    <h3 style="padding-bottom:20px;">PENCARIAN PERATURAN</h3>
-
-                    <form action="https://jdih.banjarkab.go.id/pencarian" method="get" id="formpencarian" style="padding-bottom:40px;">
-                        
-                        <div class="row" style="text-align:center; margin-top:10px;">
-                            <div class="col-md-2"></div>
-                            <div class="col-xs-12 col-md-8">
-                            <input type="text" class="form-control" id="search" name="q" placeholder="Masukkan Judul/Kata Kunci..." autocomplete="off" value="">
                             </div>
                         </div>
-                        
-                        <div class="row" style="text-align:center; margin-top:10px;">
-                            <div class="col-md-2"></div>
-                            <div class="col-xs-12 col-md-8">
-                            <select name="jenis_peraturan" id="jns_peraturan" class="form-control select2" style="background:white">
-                                <option value="" style="#c3c3c3">- Jenis Dokumen -</option>
-                                
-                                <option value="62">Peraturan Bupati</option>
-                                <option value="56">Peraturan Daerah</option>
-                                <option value="76">Naskah Akademik</option>
-                                <option value="105">Perjanjian Kerja Sama / MoU</option>
-
-                            </select>
-                            </div>
-                        </div>
-                        
-                        <div class="row" style="text-align:center; margin-top:10px;">
-                            <div class="col-md-2"></div>
-                            <div class="col-xs-6 col-md-4">
-                            <input type="text" class="form-control pencarian" id="nomor_peraturan" name="nomor_peraturan" placeholder="Nomor..." autocomplete="off">
-                            </div>
-                            
-                            <div class="col-xs-6 col-md-4">
-                            <input type="text" class="form-control pencarian" id="thn_peraturan" name="tahun_terbit" placeholder="Tahun..." autocomplete="off">
-                            </div>
-                        </div>
-                        
-                        <div class="row" style="text-align:center; margin-top:20px;">
-                            <div class="col-xs-12 col-md-12">
-                            <button type="submit" class="btn btn-primary btn-md" style="padding-right:50pt; padding-left:50pt;" id="cari">Cari</button>
-                            </div>
-                        </div>
-                    
-                    </form>
-                </div>
-
-                <div class="col-md-1 col-sm-1"></div>
-           </div>
-        </div>
-    </section>
-    <!-- End pencarian -->
-
-    <!-- Alur pelayanan -->
-    <section class="about_us_area row">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="tittle wow fadeInUp">
-                        <h2>HARI PERINGATAN<br>TAHUN 2024</h2>
                     </div>
-                    <div class="row about_row text-center">
-                        <img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/hari_peringatan/RESMIKAN-UPTD.jpg" style="width: 80%; height: 450px; object-fit: cover;">
-                    </div>
-                </div> 
-                
-                <div class="col-md-6">
-                    <div class="tittle wow fadeInUp">
-                        <h2>FORMAT DOKUMEN PEMBENTUKAN<br>PRODUK HUKUM DAERAH</h2>
-                    </div>
-                    <div class="row about_row text-center">
-                        <img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/qr-format-phd.png" style="width: 50%; height: 400px; object-fit: cover;">
-                        <br>
-                        <a href="https://drive.google.com/drive/folders/1o4QWjIblsYaHY11Uk1HmK1ZJQxzFi5dE" target="blank_" class="btn btn-primary btn-md" style="padding-right:50pt; padding-left:50pt;">Buka</a>
-                    </div>
-                </div> 
-                <!-- <div class="col-md-3"></div> -->
+                </div><!-- modal-body -->
             </div>
-        </div>
-    </section>
-    <!-- End Alur -->
-
-    <script src="https://jdih.banjarkab.go.id/assets/frontend_ildis/js/jquery-1.12.0.min.js"></script>
-    <script src="https://jdih.banjarkab.go.id/assets/select2/js/select2.full.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-        $( "#search" ).change(function() {
-        $('#q').val($('#search').val());
-        });
-
-        $('#tipe_dokumen').select2({
-        allowClear: true,
-        placeholder: 'Pilih Tipe Dokumen',
-        ajax: {
-            url: "https://jdih.banjarkab.go.id/tipeDokumen",
-            dataType: 'json',
-            delay: 250,
-            processResults: function (data) {
-            return {
-                results: $.map(data, function (item) {
-                return {
-                    text: item.name,
-                    id: item.id
-                }
-                })
-            };
-            },
-            cache: true
-        }
-        });
-
-        $('#jenis_peraturan').select2({
-        allowClear: true,
-        placeholder: 'Pilih Jenis Dokumen',
-        ajax: {
-            url: "https://jdih.banjarkab.go.id/jenisDokumen",
-            dataType: 'json',
-            delay: 250,
-            data: function (params) {
-            var query = {
-            search: params.term,
-                type: $('#tipe_dokumen').val()
-            }
-            return query;
-            },
-            processResults: function (data) {
-            return {
-                results: $.map(data, function (item) {
-                return {
-                    text: item.name,
-                    id: item.id
-                }
-                })
-            };
-            },
-            cache: true
-        }
-        });
-
-        $('#nama_pengarang').select2({
-        allowClear: true,
-        placeholder: 'Pilih Pengarang',
-        ajax: {
-            url: "https://jdih.banjarkab.go.id/namaPengarang",
-            dataType: 'json',
-            delay: 250,
-            processResults: function (data) {
-            return {
-                results: $.map(data, function (item) {
-                return {
-                    text: item.name,
-                    id: item.id
-                }
-                })
-            };
-            },
-            cache: true
-        }
-        });
-
-        $('#tahun_terbit').select2({
-        allowClear: true,
-        placeholder: 'Pilih Tahun',
-        ajax: {
-            url: "https://jdih.banjarkab.go.id/tahunTerbit",
-            dataType: 'json',
-            delay: 250,
-            processResults: function (data) {
-            return {
-                results: $.map(data, function (item) {
-                return {
-                    text: item.tahun_terbit,
-                    id: item.tahun_terbit
-                }
-                })
-            };
-            },
-            cache: true
-        }
-        });
-
-        var url = new URL(location.href);
-        var tipeDokumen = url.searchParams.get('tipe_dokumen');
-        if (tipeDokumen != null) {
-            $.ajax({
-                type: 'GET',
-                url: "https://jdih.banjarkab.go.id/tipeDokumen",
-                data: { tipe_dokumen: tipeDokumen }
-            }).then(function (data) {
-                var option = new Option(data[0].name, data[0].id, true, true);
-
-                $('#tipe_dokumen').append(option).trigger('change');
-            });
-        }
-
-        var jenisPeraturan = url.searchParams.get('jenis_peraturan');
-        if (jenisPeraturan != null) {
-            $.ajax({
-                type: 'GET',
-                url: "https://jdih.banjarkab.go.id/jenisDokumen",
-                data: { jenis_peraturan: jenisPeraturan }
-            }).then(function (data) {
-                var option = new Option(data[0].name, data[0].id, true, true);
-
-                $('#jenis_peraturan').append(option).trigger('change');
-            });
-        }
-
-        var namaPengarang = url.searchParams.get('nama_pengarang');
-        if (namaPengarang != null) {
-            $.ajax({
-                type: 'GET',
-                url: "https://jdih.banjarkab.go.id/namaPengarang",
-                data: { nama_pengarang: namaPengarang }
-            }).then(function (data) {
-                var option = new Option(data[0].name, data[0].id, true, true);
-
-                $('#nama_pengarang').append(option).trigger('change');
-            });
-        }
-
-        var nomorPeraturan = url.searchParams.get('nomor_peraturan');
-        if (nomorPeraturan != null) {
-            $('#nomor_peraturan').val(nomorPeraturan);
-        }
-        
-        var thnPeraturan = url.searchParams.get('tahun_terbit');
-        if (thnPeraturan != null) {
-            $('#thn_peraturan').val(thnPeraturan);
-        }
-
-        var tahunTerbit = url.searchParams.get('tahun_terbit');
-        if (tahunTerbit) {
-        $.each(tahunTerbit.split(','), function(k, v){
-            var option = new Option(v, v, true, true);
-            $('#tahun_terbit').append(option).trigger('change');
-        });
-        }
-
-        var dataStatus = new Array();
-        var status_terakhir = url.searchParams.get('status_terakhir');
-        if (status_terakhir) {
-        $.each(status_terakhir.split(','), function(k, v){
-            dataStatus.push(v);
-        });
-        }
-
-        $("input[name='status_terakhir']").each(function(k, v){
-            var data = $(v).val();
-
-            if ($.inArray(data, dataStatus) >= 0) {
-                $(v).prop('checked', true);
-            }
-        });
-        
-        //  =============================
-        $("#thn_peraturan").keyup(function(event) {
-            if (event.keyCode === 13) {
-                $("#cari").click();
-            }
-        });
-        $("#nomor_peraturan").keyup(function(event) {
-            if (event.keyCode === 13) {
-                $("#cari").click();
-            }
-        });
-        $("#jns_peraturan").keyup(function(event) {
-            if (event.keyCode === 13) {
-                $("#cari").click();
-            }
-        });
-        $("#search").keyup(function(event) {
-            if (event.keyCode === 13) {
-                $("#cari").click();
-            }
-        });
-        //  =============================
-
-        var thTerbit = new Array();
-        var dtStatus = new Array();
-        var params = new Array();
-        var url = '';
-        $( "#cari" ).click(function() {
-        $.each($('#formpencarian').serializeArray(), function(k, v){
-            if (v.value) {
-            if (v.name == 'tahun_terbit') {
-                thTerbit.push(v.value);
-            } else if (v.name == 'status_terakhir') {
-                dtStatus.push(v.value);
-            } else {
-                params.push(v.name + '=' + v.value);
-            }
-            }
-        });
-        if (thTerbit.length > 0) {
-            params.push('tahun_terbit' + '=' + thTerbit.join(','));
-        }
-        if (dtStatus.length > 0) {
-            params.push('status_terakhir' + '=' + dtStatus.join(','));
-        }
-        var queryString = params.join('&');
-        var baseurl = window.location.href.replace(/\?.*/g, "");
-        url = baseurl + 'pencarian?' + queryString;
-        window.location = url;
-        // $( "#formpencarian" ).submit();
-        });
-
-    });
-    </script>
-
-    <!-- Visi & Misi -->
-    <section class="professional_builder row">
-        <div class="container">
-           <div class="row builder_all">
-
-                <div class="col-md-12 col-sm-12 builder" style="color:white; text-align:center; padding-bottom:10px;">
-                    <img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/manis.png" width="20%">
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->
+    <!-- Modal Cek Status eSIGN -->
+    <div id="modal-esign" class="modal fade">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="background: #143f70; border: 2px solid #368600 !important">
+                <div class="modal-header pd-x-20 border-bottom-0 ">
+                    <h3 class="modal-title font-weight-bold" style="text-transform: capitalize;  color: #f9d0aa"><span
+                            class="fa fa-lock"></span> CEK STATUS eSIGN</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-
-                <div class="col-md-6 col-sm-6 builder" style="color:white; text-align:center;">
-                    <h4 style="color:gold;">Visi Kabupaten Banjar :</h4>
-                    <p style="color:white;">Terwujudnya Kabupaten Banjar Yang Maju, Mandiri dan Agamis.</p>
-                    <center>    
-                        <hr width="30%">
-                        <div class="row about_row text-center">
-                            <video playsinline controls autoplay loop style="width: 80%; height: 300px;">
-                                <source src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/mars-manis-240.webm" type="video/webm" />
-                            </video>
-                        </div>
-                    </center>
-                </div>
-                
-                <div class="col-md-6 col-sm-6 builder" style="color:white; text-align:center;">
-                    <h4 style="color:gold;">Misi Kabupaten Banjar :</h4>
-                    <p style="text-align:justify; color:white; padding-bottom:30px;">Misi merupakan rumusan umum mengenai upaya-upaya yang akan dilaksanakan untuk mewujudkan visi. Rencana Pembangunan Jangka Menengah Daerah [RPJMD) Kabupaten Banjar Tahun 2021 – 2026 berorientasi pada pembangunan dan peningkatan kompetensi segenap sumber daya yang terdapat di Kabupaten Banjar dalam segala bidang, guna menyiapkan kesejahteraan masyarakat Kabupaten Banjar. Dalam rangka mewujudkan Visi Kepala Daerah Kabupaten Banjar yang telah ditetapkan diatas. maka berikut merupakan Misi Kepala Daerah  Kabupaten  Banjar Tahun 2021 -2026: <br>1. Peningkatan kualitas hidup dan kualitas sumber daya manusia. <br>2. Peningkatan ekonomi yang berkualitas berbasis kerakyatan dan Pemerataan pembangunan daerah. <br>3. Pengelolaan lingkungan hidup yang berkelanjutan. <br> 4. Penyelenggaraan kepemerintahan yang amanah, baik, bersih dan efektif. <br>5. Penguatan karakter masyarakat yang religius, berakhlak baik dan berkepribadian luhur serta menciptakan kehidupan masyarakat yang tertib, aman,dan demokratis.</p>
-                </div>
-
-           </div>
-        </div>
-    </section>
-    <!-- End Visi & Misi -->
-
-    <!--Jadwal & Propemperda -->
-    <section class="about_us_area row">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="tittle wow fadeInUp">
-                        <h2>ALUR PELAYANAN</h2>
-                    </div>
-                    <div class="row about_row text-center">
-                        <embed type="application/pdf" src="https://jdih.banjarkab.go.id/dokumen/alur_pelayanan.pdf" width="80%" height="450"></embed>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="tittle wow fadeInUp">
-                        <h2>PENDUKUNG LAYANAN</h2>
-                    </div>
-                    <div class="row about_row text-center">
-                        <a href="https://tinyurl.com/skmhukum2023" target="_blank"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/tombol-skm.png" style="width: 60%; height: 80px; object-fit: cover; margin-bottom:20px;"></a>
-                        
-                        <a href="https://forms.office.com/r/ubNT6ymt8f" target="_blank"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/buku-tamu.png" style="width: 60%; height: 80px; object-fit: cover; margin-bottom:20px;"></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- End Jadwal -->
-
-    <!--SKM -->
-    <section class="professional_builder row">
-        <div class="container">
-           <div class="row builder_all">
-
-                <!-- <div class="col-md-12 col-sm-12 builder" style="color:white; text-align:center; padding-bottom:15px;">
-                    <img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/manis.png" width="30%">
-                </div> -->
-
-                <div class="col-md-12 col-sm-12 builder" style="color:white; text-align:center;">
-                    <p style="text-align:justify; color:white; padding-bottom:30px;">Pelayanan Publik yang telah dilaksanakan oleh Bagian Hukum Sekretariat Daerah Kabupaten Banjar berhasil mendapat nilai <b><u>78.60</u></b> dengan Predikat <b><u>Baik</u></b> pada Pelaksanaan Penilaian Survey Indeks Kepuasan Masyarakat Tahun 2023.</p>
-                </div>
-
-           </div>
-        </div>
-    </section>
-    <!-- End SKM -->
-
-    <!--Tentang Kami -->
-    <section class="about_us_area row">
-        <div class="container">
-            <div class="row">
-            <div class="col-md-6">
-                    <div class="tittle wow fadeInUp">
-                        <h2>INTEGRASI DATA</h2>
-                    </div>
-                    <div class="row about_row">
-                        <div class="who_we_area col-md-8 col-sm-6">
-                            <p style="padding-bottom: 50px;">Jaringan Dokumentasi dan Informasi Hukum Nasional yang selanjutnya disebut JDIHN adalah wadah pendayagunaan bersama atas dokumen hukum secara tertib terpadu, dan berkesinambungan, serta merupakan sarana pemberian pelayanan informasi hukum secara lengkap, akurat, mudah, dan cepat.<br><br><b><i>JDIH Kabupaten Banjar telah terintegrasi dengan server data JDIHN sejak 22 April 2020.</i></b></p>
-                            <a id="buttonContact" href="#footer_area" class="button_all btn-sm">Kontak Kami</a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 about_client">
-                            <img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/integrasi.jpeg" alt="">
+                <div class="modal-body" style="padding:0rem">
+                    <!--Page-->
+                    <div class="page-content z-index-10 mt-0">
+                        <div class="row">
+                            <div class="col-md-12 col-md-12 d-block mx-auto">
+                                <div class="card mb-0" style="background:none; border:0">
+                                    <div class="card-header" style="margin: 0 auto; border: none;">
+                                        <h4 class="card-title" style="color:#649700">
+                                            Masukkan NIK</h4>
+                                    </div>
+                                    <form id="form-esign" method="POST">
+                                        
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <input name="nik" type="text" class="form-control" placeholder="NIK. contoh : 30122019" style="border:2px solid #368600; border-radius:10px;background:#fbffed" autocomplete="off">
+                                            </div>
+                                            <div id="esign-result" class="mx-3">
+                                            </div>
+                                            <div class="form-footer mt-2">
+                                                <button type="submit" class="btn btn-success btn-block">CEK</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div></div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="tittle wow fadeInUp">
-                    <h2>GRAFIK KEPUASAN MASYARAKAT</h2>
-                  </div>
-                  <div class="row about_row">
-                    <div id="grafikKepuasan" style="width: 100%;">No Data</div>
-                  </div>
-                </div>
+                </div><!-- modal-body -->
             </div>
-        </div>
-    </section>
-    <!-- End About Us Area -->
-
-    <!-- propem & jadwal -->
-    <section class="professional_builder row">
-        <div class="container">
-           <div class="row builder_all">
-
-                <div class="col-md-6 col-sm-6 builder" style="color:white; text-align:center;">
-                    <h3 style="color:white;" class="title">PROPEMPERDA</h3>
-                    <center>
-                        <hr width="10%" style="color:white; border-width:7px; border-radius:10px;">
-                        <div class="row about_row text-center">
-                            <embed type="application/pdf" src="https://jdih.banjarkab.go.id/dokumen/propemperda/propemperda-Januari-2024-induk.pdf" width="80%" height="450"></embed>
-                        </div>
-                    </center>
-                </div>
-                
-                <div class="col-md-6 col-sm-6 builder" style="color:white; text-align:center;">
-                    <h3 style="color:white;" class="title">JADWAL RAPAT</h3>
-                    <center>
-                        <hr width="10%" style="color:white; border-width:7px; border-radius:10px;">
-                        <div class="row about_row text-center">
-                            <embed type="application/pdf" src="https://jdih.banjarkab.go.id/dokumen/propemperda/jadwal-Januari-2024.pdf" width="80%" height="450"></embed>
-                        </div>>
-                    </center>
-                </div>
-                
-           </div>
-        </div>
-    </section>
-    <!-- End propem & jadwal -->
-
-    <!-- Our Partners Area -->
-    <section class="our_partners_area">
-        <div class="container">
-            <div class="tittle wow fadeInUp">
-                <h2>BUKU DIGITAL</h2>
-            </div>
-            <div class="partners">
-
-            
-            <table border=0 style="text-align:center; width:160px; border-radius:50px;">
-                    <tr><th><img src="https://jdih.banjarkab.go.id/dokumen/buku_hukum/Refika Aditama-Bahasa_&amp;_Produk_Hukum.png" style="width:200px; height:300px;"></th></tr>
-
-                    <tr><td style="font-size:14px; font-style:bold;"><p style="font-size:11px">Judul:</p>Bahasa &amp; Produk Hukum<br><a href="https://jdih.banjarkab.go.id/bukuhukum_show/5" class="badge" style="background:#b61415; margin-top:7px; margin-bottom:7px;">Detail</a></td></tr>
-            </table>
-
-            
-            <table border=0 style="text-align:center; width:160px; border-radius:50px;">
-                    <tr><th><img src="https://jdih.banjarkab.go.id/dokumen/buku_hukum/Refika Aditama-Dinamika_Perundang-Undangan_di_Indonesia.png" style="width:200px; height:300px;"></th></tr>
-
-                    <tr><td style="font-size:14px; font-style:bold;"><p style="font-size:11px">Judul:</p>Dinamika Perundang-Undangan di Indonesia<br><a href="https://jdih.banjarkab.go.id/bukuhukum_show/9" class="badge" style="background:#b61415; margin-top:7px; margin-bottom:7px;">Detail</a></td></tr>
-            </table>
-
-            
-            <table border=0 style="text-align:center; width:160px; border-radius:50px;">
-                    <tr><th><img src="https://jdih.banjarkab.go.id/dokumen/buku_hukum/PT Remaja Rosdakarya-Human_Communication.png" style="width:200px; height:300px;"></th></tr>
-
-                    <tr><td style="font-size:14px; font-style:bold;"><p style="font-size:11px">Judul:</p>Human Communication<br><a href="https://jdih.banjarkab.go.id/bukuhukum_show/7" class="badge" style="background:#b61415; margin-top:7px; margin-bottom:7px;">Detail</a></td></tr>
-            </table>
-
-            
-            <table border=0 style="text-align:center; width:160px; border-radius:50px;">
-                    <tr><th><img src="https://jdih.banjarkab.go.id/dokumen/buku_hukum/Bumi Aksara-Paradigma_Baru_Pendidikan_Pancasila.png" style="width:200px; height:300px;"></th></tr>
-
-                    <tr><td style="font-size:14px; font-style:bold;"><p style="font-size:11px">Judul:</p>Paradigma Baru Pendidikan Pancasila<br><a href="https://jdih.banjarkab.go.id/bukuhukum_show/8" class="badge" style="background:#b61415; margin-top:7px; margin-bottom:7px;">Detail</a></td></tr>
-            </table>
-
-            
-            <table border=0 style="text-align:center; width:160px; border-radius:50px;">
-                    <tr><th><img src="https://jdih.banjarkab.go.id/dokumen/buku_hukum/Prenadamedia Group-Pengantar_Ilmu_Hukum.png" style="width:200px; height:300px;"></th></tr>
-
-                    <tr><td style="font-size:14px; font-style:bold;"><p style="font-size:11px">Judul:</p>Pengantar Ilmu Hukum<br><a href="https://jdih.banjarkab.go.id/bukuhukum_show/6" class="badge" style="background:#b61415; margin-top:7px; margin-bottom:7px;">Detail</a></td></tr>
-            </table>
-
-            
-            <table border=0 style="text-align:center; width:160px; border-radius:50px;">
-                    <tr><th><img src="https://jdih.banjarkab.go.id/dokumen/buku_hukum/PT RajaGrafindo Persada-Teknik_Pembuatan_Akta_Pejabat_Pembuat_Akta_Tanah_(PPAT).png" style="width:200px; height:300px;"></th></tr>
-
-                    <tr><td style="font-size:14px; font-style:bold;"><p style="font-size:11px">Judul:</p>Teknik Pembuatan Akta Pejabat Pembuat Akta Tanah (PPAT)<br><a href="https://jdih.banjarkab.go.id/bukuhukum_show/4" class="badge" style="background:#b61415; margin-top:7px; margin-bottom:7px;">Detail</a></td></tr>
-            </table>
-
-                            <!-- <a href="#" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/book/1.jpg" alt=""><p style="text-align:center">Hukum Tata Negara<br>Kategori: Pemerintahan</p></div></a> -->
-
-
-            </div>
-        </div>
-    </section>
-    <!-- End Our Partners Area -->
-
-    <!-- Kegiatan Bag Hukum -->
-    <section class="what_we_area row">
-        <div class="container">
-            <div class="tittle wow fadeInUp">
-                <h2>KEGIATAN BAGIAN HUKUM</h2>
-            </div>
-            <div class="row construction_iner">
-              
-                                <div class="col-md-4 col-sm-6 construction">
-                   <div class="cns-img">
-                        <img src="https://jdih.banjarkab.go.id/image/berita/berita65a884aadfd4c.jpeg" alt="">
-                   </div>
-                   <div class="cns-content">
-                        <i class="fa fa-navicon" aria-hidden="true"></i>
-                        <p>Kamis, 11 Januari 2024</p>
-                        <a href="https://jdih.banjarkab.go.id/detail_berita/1054" title="Rapat Pemerintah Daerah dengan Komisi I DPRD Kabupaten Banjar pembahasan RPJPD"><h4 style="text-align:justify">Rapat Pemerintah Daerah d...</h4></a>
-                        <p style="text-align:justify">Rapat Pemerintah Daerah dengan Komisi I DPRD Kabupaten Banjar pembahasan RPJPD, rabu 10 januari 2024</p>
-                        <a href="https://jdih.banjarkab.go.id/detail_berita/1054" class="button_all">Selanjutnya...</a>
-                   </div>
-                </div>
-                                <div class="col-md-4 col-sm-6 construction">
-                   <div class="cns-img">
-                        <img src="https://jdih.banjarkab.go.id/image/berita/berita65a884cf506f0.jpeg" alt="">
-                   </div>
-                   <div class="cns-content">
-                        <i class="fa fa-navicon" aria-hidden="true"></i>
-                        <p>Kamis, 11 Januari 2024</p>
-                        <a href="https://jdih.banjarkab.go.id/detail_berita/1055" title="Rapat Pembahasan RAPERBUP tentang Sistem Kerja"><h4 style="text-align:justify">Rapat Pembahasan RAPERBUP...</h4></a>
-                        <p style="text-align:justify">Rapat Pembahasan RAPERBUP tentang Sistem Kerja, hari Rabu 10 januari 2024</p>
-                        <a href="https://jdih.banjarkab.go.id/detail_berita/1055" class="button_all">Selanjutnya...</a>
-                   </div>
-                </div>
-                                <div class="col-md-4 col-sm-6 construction">
-                   <div class="cns-img">
-                        <img src="https://jdih.banjarkab.go.id/image/berita/berita656feb7ab00d7.jpg" alt="">
-                   </div>
-                   <div class="cns-content">
-                        <i class="fa fa-navicon" aria-hidden="true"></i>
-                        <p>Selasa, 05 Desember 2023</p>
-                        <a href="https://jdih.banjarkab.go.id/detail_berita/1015" title="Sosialisasi Produk Hukum Daerah Kabupaten Banjar di Kecamatan Martapura Barat Tahun 2023"><h4 style="text-align:justify">Sosialisasi Produk Hukum ...</h4></a>
-                        <p style="text-align:justify">Sosialisasi Produk Hukum Daerah Kabupaten Banjar di Kecamatan Martapura Barat Tahun 2023, selasa&amp;nbs...</p>
-                        <a href="https://jdih.banjarkab.go.id/detail_berita/1015" class="button_all">Selanjutnya...</a>
-                   </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <!-- End -->
-
-    <!-- Our Partners Area -->
-    <section class="our_partners_area">
-        <div class="container">
-            <div class="tittle wow fadeInUp">
-                <h2>LINK TERKAIT</h2>
-            </div>
-            <div class="partners">
-                <a href="https://jdihn.go.id/" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link-jdihn.png" alt=""></div></a>
-
-                <a href="https://lsc.bphn.go.id/" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link-bphn.png" alt=""></div></a>
-
-                <a href="https://jdih-kalsel.kemenkumham.go.id/" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link-kemenkumham.png" alt=""></div></a>
-
-                <a href="https://jdih.kalselprov.go.id/" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link-kalsel.png" alt=""></div></a>
-
-                <a href="https://jdih.balangankab.go.id/" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link-balangan.png" alt=""></div></a>
-
-                <a href="https://jdih.banjarbarukota.go.id/" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link-banjarbaru.png" alt=""></div></a>
-
-                <a href="https://jdih.banjarmasinkota.go.id/" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link-banjarmasin.png" alt=""></div></a>
-
-                <a href="https://jdih.baritokualakab.go.id/" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link-batola.png" alt=""></div></a>
-
-                <a href="https://baghukum.hulusungaiselatankab.go.id" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link-hss.png" alt=""></div></a>
-
-                <a href="https://jdih.hulusungaitengahkab.go.id/" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link-hst.png" alt=""></div></a>
-
-                <a href="https://jdih.hsu.go.id/" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link-hsu.png" alt=""></div></a>
-
-                <a href="https://jdih.kotabarukab.go.id/" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link-kotabaru.png" alt=""></div></a>
-
-                <a href="https://jdih.tabalongkab.go.id/" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link-tabalong.png" alt=""></div></a>
-
-                <a href="https://www.jdih.tanahlautkab.go.id/" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link-tala.png" alt=""></div></a>
-
-                <a href="https://jdih.tanahbumbukab.go.id/" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link-tanah_bumbu.png" alt=""></div></a>
-
-                <a href="https://jdih.tapinkab.go.id/" target="_blank" rel="noopener noreferrer"><div class="item"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link-tapin.png" alt=""></div></a>
-
-            </div>
-        </div>
-    </section>
-    <!-- End Our Partners Area -->
-
-    <!-- berita terbaru -->
-    <section class="what_we_area row">
-        <div class="container">
-            <div class="tittle wow fadeInUp">
-                <h2>SEPUTAR PEMKAB BANJAR</h2>
-            </div>
-            <div class="row construction_iner">
-              
-                                <div class="col-md-4 col-sm-6 construction">
-                   <div class="cns-img">
-                        <img src="https://jdih.banjarkab.go.id/image/berita/berita65bc38ec14873.jpg" alt="">
-                   </div>
-                   <div class="cns-content">
-                        <i class="fa fa-navicon" aria-hidden="true"></i>
-                        <p>Kamis, 01 Februari 2024</p>
-                        <a href="https://jdih.banjarkab.go.id/detail_berita/1073" title="Isi Kekosongan, Bupati Banjar Lantik Dua Pejabat Tinggi Pratama"><h4 style="text-align:justify">Isi Kekosongan, Bupati Ba...</h4></a>
-                        <p style="text-align:justify">MARTAPURA,- Bupati Banjar H Saidi Mansyur melantik dan mengambil sumpah 2 (dua) pejabat Pimpinan Tin...</p>
-                        <a href="https://jdih.banjarkab.go.id/detail_berita/1073" class="button_all">Selanjutnya...</a>
-                   </div>
-                </div>
-                                <div class="col-md-4 col-sm-6 construction">
-                   <div class="cns-img">
-                        <img src="https://jdih.banjarkab.go.id/image/berita/berita65bc392f75ca8.jpg" alt="">
-                   </div>
-                   <div class="cns-content">
-                        <i class="fa fa-navicon" aria-hidden="true"></i>
-                        <p>Kamis, 01 Februari 2024</p>
-                        <a href="https://jdih.banjarkab.go.id/detail_berita/1074" title="Penyerahan Sertifikat Asli Tanah Hutan Pinus 2"><h4 style="text-align:justify">Penyerahan Sertifikat Asl...</h4></a>
-                        <p style="text-align:justify">Pada hari Rabu Tanggal 31 Januari 2024 bertempat di Aula kantor Pertanahan Kota Banjarbaru dilakukan...</p>
-                        <a href="https://jdih.banjarkab.go.id/detail_berita/1074" class="button_all">Selanjutnya...</a>
-                   </div>
-                </div>
-                                <div class="col-md-4 col-sm-6 construction">
-                   <div class="cns-img">
-                        <img src="https://jdih.banjarkab.go.id/image/berita/berita65b9af57ac0a1.jpg" alt="">
-                   </div>
-                   <div class="cns-content">
-                        <i class="fa fa-navicon" aria-hidden="true"></i>
-                        <p>Rabu, 31 Januari 2024</p>
-                        <a href="https://jdih.banjarkab.go.id/detail_berita/1068" title="Wabup Banjar Hadiri Peringatan Seratus Hari Alm KH Hatim Salman"><h4 style="text-align:justify">Wabup Banjar Hadiri Perin...</h4></a>
-                        <p style="text-align:justify">MARTAPURA,- Lantunan Surat Yasin dan syair Salawat Dalail Khairat yang dipimpin oleh&nbsp;Imam Musal...</p>
-                        <a href="https://jdih.banjarkab.go.id/detail_berita/1068" class="button_all">Selanjutnya...</a>
-                   </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <!-- End -->
-    
-    <!-- klinik -->
-    <section class="our_partners_area" style="background-image:url('https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/BG-pu.jpg'); background-repeat: no-repeat;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 text-center">
-                    <center>
-                        <img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/klinik-ajah.png" style="width: 795px; height: 288px; margin-top:20px; margin-bottom:20px;">
-                    </center>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End klinik -->
-
-    <!-- Footer Area -->
-    <footer id="footer_area" class="footer_area">
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->
+    <section class="sptb" style="padding-top: 1rem !important">
     <div class="container">
-            <div class="footer_row row">
-                <div class="col-md-4 col-sm-3 footer_about">
-                    <h2 style="margin-left:15%;">JDIH Kabupaten Banjar</h2>
-                    <center>
-                        <a href="https://banjarkab.go.id/"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/link_banjar.png" style="border-radius:15px; width:60%;"></a>
-                    </center>
-                    <hr>
-                    <!-- <p>JDIH KABUPATEN BANJAR</p> -->
-                    <!-- <br> -->
-                    <!-- <a href="#" class="button_all2">Selanjutnya...</a>
-                    <img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/BPHN 2019.png" alt=""> -->
-                </div>
+        <div class="col-lg-12 col-sm-12 ml-auto mb-2 mt-2 pb-5">
+                                
+            <ul class="social">
+                <li>
+                    <a style="color: #ffd400  !important" target="_blank" class="social-icon" href="https://www.instagram.com/banjarkab"><i class="fa fa-3x fa-instagram"></i></a></li>
+                <li>
+                    <a style="color: #ffd400  !important" target="_blank" class="social-icon" href="https://www.facebook.com/banjarkab"><i class="fa fa-3x fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a style="color: #ffd400  !important" target="_blank" class="social-icon" href="https://twitter.com/banjarkab"><i class="fa fa-3x fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a style="color: #ffd400 !important" target="_blank" class="social-icon" href="https://www.youtube.com/IntanTV%20Kominfo%20Banjar"><i class="fa fa-3x fa-youtube"></i></a>
+                </li>
 
-                <div class="col-md-4 col-sm-3 footer_about" style="margin-bottom:7%;">
-                    <h2 style="margin-left:15%;">Statistik Pengunjung</h2>
-                    <table style="margin-left:15%;">
-                        <tr><td style="padding-right:10px; color:#f6b60b;"><i class="fa fa-chevron-right"></td><td style="color:white">Hari ini</td><td style="padding: 2px 15px; color:white;">:</td><td style="color:white;">23 Pengunjung</td></tr>
-                        <tr><td style="padding-right:10px; color:#f6b60b;"><i class="fa fa-chevron-right"></td><td style="color:white">Bulan ini</td><td style="padding: 2px 15px; color:white;">:</td><td style="color:white;">230 Pengunjung</td></tr>
-                        <tr><td style="padding-right:10px; color:#f6b60b;"><i class="fa fa-chevron-right"></td><td style="color:white">Tahun ini</td><td style="padding: 2px 15px; color:white;">:</td><td style="color:white;">9,057 Pengunjung</td></tr>
-                        <tr><td style="padding-right:10px; color:#f6b60b;"><i class="fa fa-chevron-right"></td><td style="color:white">Total</td><td style="padding: 2px 15px; color:white;">:</td><td style="color:white;">75,005 Pengunjung</td></tr>
-                    </table>
-                    <!-- <ul class="socail_icon">
-                        <center>
-                            <li><a href="https://www.facebook.com/banjarkab" target="_blank"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/icon-fb.png"></i></a></li>
-                            <li><a href="https://www.twitter.com" target="_blank"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/icon-tw.png"></i></a></li>
-                            <li><a href="https://www.instagram.com/banjarkab/" target="_blank"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/icon-ig.png"></i></a></li>
-                        </center>
-                    </ul> -->
-                </div>
-
-                <div class="col-md-4 col-sm-3 footer_about">
-                    <h2 style="margin-left:15%;">Hubungi Kami</h2>
-                    <address style="margin-left:15%;">
-                        <ul class="my_address">
-                            <li>
-                              <a href="#">
-                                <p style="font-size: 12px;"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/icon-location.png"> Alamat : JL. Jend. A . Yani No 2 Martapura, Kalimantan Selatan</p>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <p style="font-size: 12px;"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/icon-email.png"> Email : bagianhukumbanjar@gmail.com </p>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <p style="font-size: 12px;"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/icon-phone.png"> Telepon : 0511 - 4721538 - 4721002 - 4722914</p>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <p style="font-size: 12px;"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/icon-time.png"> Senin s/d Jum'at pukul 08:00 - 15:00</p>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <p style="font-size: 12px;"><img src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/icon-phone.png"> Fax : 0511 - 4721538</p>
-                              </a>
-                            </li>
-                        </ul>
-                    </address>
-                </div>
-            </div>
-            <div class="copyright_area">
-                2020 Hak Cipta - JDIH Kabupaten Banjar
-            </div>
+            </ul>
+            <ul class="social pull-left">
+                <li class="pull-left ml-0">
+                    <audio id="rsb" src="https://banjarkab.go.id/radio" controls  style="display: none"></audio>
+                    <img id="btn-rsb"  onclick="playVid();" src="https://banjarkab.go.id/assets/images/podcast_rsb.svg" style="height:100px; cursor:pointer">
+                    
+                </li>
+            </ul>
         </div>
-            <!-- <div class="copyright_area">
-                2019 Hak Cipta - Badan Pembinaan Hukum Nasional
-            </div> -->
-        </div>
-        <!-- <div class="copyright_area">
-            2019 Hak Cipta - Badan Pembinaan Hukum Nasional
-        </div> -->
-    </footer>
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
-    <!-- <button class="open-button" onclick="openForm()">Chat</button> -->
-    <button onclick="openForm()" id="openBtn" class="open-button" title="Survey Kepuasan"><i class="fa fa-commenting-o" style="font-size: 30px;"></i></button>
-    <div class="chat-popup" id="myForm">
-      <form action="https://jdih.banjarkab.go.id/survey_kepuasan" method="POST" class="form-container">
-        <input type="hidden" name="_token" value="Xqyi4fqxYLhWZ29tdiuQbywnuQsqJaSr1RQbd0cm">
-        <h3 style="color: white;"><center><img style="width: 50px; height:auto;" src="https://jdih.banjarkab.go.id/assets/frontend_ildis/icon/logo_jdihn.png" alt=""> Survey Kepuasan</h3>
-        <textarea placeholder="Tulis saran disini..." name="msg" required></textarea>
-        <span class="star-rating star-5">
-          <input type="radio" name="rating" value="1"><i></i>
-          <input type="radio" name="rating" value="2"><i></i>
-          <input type="radio" name="rating" value="3"><i></i>
-          <input type="radio" name="rating" value="4"><i></i>
-          <input type="radio" name="rating" value="5"><i></i>
-        </span>
-        <button type="submit" class="btn">Kirim</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Tutup</button>
-      </form>
-      <div class="speech-bubble-ds-arrow"></div>
     </div>
+            <div class="container">
+             
+                <div class="item-all-cat center-block text-center education-categories" >
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                            
+                                
+                            <span>
+                                <img src="https://banjarkab.go.id/assets/images/logo.png" alt="" class="img-responsive floating " width="90"></span><span>
+                                
+                            </span>
+                            <p class="text-left text-brown float-right  leading-tight" style="font-size: 22px; color:#fff700; font-weight: 400; margin-left:15px">Pemerintah Kabupaten <br>
+                            <span style="font-size: 30px; font-weight: 800">KABUPATEN BANJAR</span><br><span style="font-size: 24px; color: #ff9b61"><strong> Maju, Mandiri dan Agamis</strong></span></p>  
+
+                        </a>
+                        
+
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="container">
+                   <div id="cover" class="mt-5" style="background-color: #f2e0c3 !important">
+                    <form method="get" action="https://home.banjarkab.go.id" autocomplete="off">
+                      <div class="tb">
+                        <div class="td"><input type="text" name="s" placeholder="Cari informasi..." required></div>
+                        <div class="td" id="s-cover">
+                          <button type="submit">
+                            <div id="s-circle"></div>
+                            <span></span>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                <div class="item-all-cat center-block text-center education-categories">
+                    <div class="row" style="justify-content:center">
+                      <div class="col-md-12">
+                            <div class="card" style="box-shadow: none; background:none !important; border:none; color:#fff700;">
+                                <div class="card-body" style="padding: 0 !important;">
+                                    <div class="text-center">
+                                        <h3 class="mt-3 slide-fwd-center" style="letter-spacing: normal !important; color: #f9d0aa"><b>PUBLIK</b></h3>
+                                    </div>
+                                </div>
+                                <div style="display:none">
+<a href="https://bhyxsw.com/">slot depo 10k</a>
+<a href="https://truedata.co.in/">saudara168</a>
+<a href="https://www.hnqxn.com/">toto togel</a>
+<a href="https://io.untad.ac.id/wp-content/uploads/2024/01/situs-toto/">situs toto</a>
+<a href="https://io.untad.ac.id/wp-content/uploads/2024/01/s-gacor/">slot gacor</a>
+<a href="https://io.untad.ac.id/wp-content/uploads/2023/-/danatoto/">toto togel</a>
+<a href="https://io.untad.ac.id/wp-content/uploads/2023/-/sloto/">slot togel</a>
+<a href="https://io.untad.ac.id/wp-content/uploads/2023/-/10k/">slot depo 10k</a>
+<a href="https://io.untad.ac.id/wp-content/uploads/2023/-/5k/">slot depo 5k</a>
+<a href="https://io.untad.ac.id/wp-content/uploads/2023/-/nexus/">nexus slot</a>
+<a href="https://io.untad.ac.id/wp-content/uploads/2023/-/pay4d/">pay4d</a>
+<a href="https://io.untad.ac.id/wp-content/uploads/2023/-/idn/">idn slot</a>
+<a href="https://io.untad.ac.id/wp-content/uploads/2023/-/thai/">slot thailand</a>
+<a href="https://io.untad.ac.id/wp-content/uploads/2023/-/max/">slot maxwin</a>
+<a href="https://io.untad.ac.id/wp-content/uploads/2023/-/slot777/">slot777</a>
+<a href="https://io.untad.ac.id/wp-content/uploads/2023/-/hoki/">hoki slot</a>
+<a href="https://io.untad.ac.id/wp-content/uploads/2023/-/depo25/">depo 25 bonus 25</a>
+<a href="https://kaldenkirchen.info/">idn slot</a>
+</div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+                            <div class="item-all-card text-dark text-center"  style="background: #143f70 !important; border: 1px solid #2d5a89; border-radius: 10px ">
+                                <a href="https://banjarkab.go.id/info-bed" target="_blank"></a>
+                                <div class="iteam-all-icon ">
+<svg id="Capa_1" enable-background="new 0 0 512 512"  viewBox="0 0 512 512"  xmlns="http://www.w3.org/2000/svg"><g><g><path class="st0" d="m208.357 190.666c9.427 2.886 19.064 4.316 28.652 4.316 15.725 0 31.314-3.848 45.597-11.433 47.454-25.197 65.557-84.307 40.353-131.766-12.209-22.989-32.639-39.846-57.528-47.466-24.888-7.622-51.255-5.093-74.249 7.116 0 0-.001.001-.001.001-47.447 25.209-65.549 84.318-40.352 131.765 12.209 22.99 32.639 39.846 57.528 47.467zm-10.137-165.986-.001.001c19.454-10.33 41.765-12.466 62.821-6.021 21.057 6.446 38.342 20.708 48.671 40.159 21.325 40.155 6.009 90.166-34.14 111.484-19.455 10.331-41.763 12.469-62.821 6.022-21.057-6.447-38.342-20.709-48.672-40.16-21.319-40.144-6.003-90.156 34.142-111.485z"/><path class="st0" d="m197.28 121.842h15.29v15.26c0 9.512 7.726 17.25 17.223 17.25h14.202c9.512 0 17.251-7.738 17.251-17.25v-15.26h15.262c9.513 0 17.252-7.738 17.252-17.25v-14.201c0-9.512-7.739-17.25-17.252-17.25h-15.262v-15.26c0-9.512-7.739-17.25-17.251-17.25h-14.202c-9.497 0-17.223 7.738-17.223 17.25v15.26h-15.29c-9.512 0-17.252 7.738-17.252 17.25v14.201c0 9.512 7.74 17.25 17.252 17.25zm-2.251-31.451c0-1.22 1.031-2.251 2.251-2.251h22.791c4.142 0 7.5-3.357 7.5-7.5v-22.76c0-1.22 1.018-2.251 2.222-2.251h14.202c1.22 0 2.251 1.031 2.251 2.251v22.76c0 4.142 3.358 7.5 7.5 7.5h22.762c1.22 0 2.251 1.031 2.251 2.251v14.201c0 1.22-1.031 2.251-2.251 2.251h-22.762c-4.142 0-7.5 3.357-7.5 7.5v22.76c0 1.22-1.031 2.251-2.251 2.251h-14.202c-1.205 0-2.222-1.031-2.222-2.251v-22.76c0-4.142-3.358-7.5-7.5-7.5h-22.791c-1.22 0-2.251-1.031-2.251-2.251z"/><path class="st0" d="m482.831 439.442v-61.766h20.109c4.143 0 7.501-3.357 7.501-7.5v-150.28c0-15.872-12.928-28.786-28.817-28.786-13.28 0-24.482 9.04-27.791 21.286h-67.595c-4.143 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5h66.597v135.282h-202.785v-104.801c0-16.808 13.675-30.482 30.484-30.482h71.064c4.143 0 7.5-3.357 7.5-7.5s-3.358-7.5-7.5-7.5h-71.064c-25.08 0-45.485 20.402-45.485 45.482v2.023h-89.611c-.287-11.737-7.425-22.798-18.764-27.49-.207-.086-.418-.162-.632-.229l-68.436-21.371v-38.617c0-15.888-12.928-28.814-28.817-28.814-15.875-.001-28.789 12.925-28.789 28.813v70.181c0 4.142 3.358 7.5 7.5 7.5s7.5-3.357 7.5-7.5v-70.181c0-7.618 6.185-13.815 13.788-13.815 7.618 0 13.816 6.197 13.816 13.815v155.383c0 4.142 3.358 7.5 7.5 7.5h184.943v27.601h-220.046v-85.667c0-4.142-3.358-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v93.167c0 4.142 3.358 7.5 7.5 7.5h27.791v61.766c-16.634 3.471-29.168 18.245-29.168 35.893 0 20.217 16.45 36.666 36.669 36.666s36.669-16.449 36.669-36.666c0-17.648-12.535-32.421-29.168-35.893v-23.784h417.536v23.784c-16.634 3.471-29.169 18.245-29.169 35.893 0 20.217 16.45 36.666 36.669 36.666s36.67-16.45 36.67-36.667c0-17.648-12.535-32.421-29.169-35.892zm-1.208-233.333c7.619 0 13.816 6.184 13.816 13.787v142.781h-27.603v-142.781c0-7.603 6.185-13.787 13.787-13.787zm-360.407 40.28c5.493 2.401 8.976 7.776 9.228 13.512h-72.838v-33.378zm-63.61 73.687v-45.176h79.296 98.147v45.176zm6.854 155.258c0 11.947-9.72 21.666-21.668 21.666s-21.668-9.719-21.668-21.666c0-11.948 9.72-21.667 21.668-21.667s21.668 9.72 21.668 21.667zm-14.168-74.675v-22.982h417.538v22.982zm425.039 96.342c-11.948 0-21.668-9.719-21.668-21.666 0-11.948 9.72-21.667 21.668-21.667s21.668 9.719 21.668 21.667c0 11.946-9.72 21.666-21.668 21.666z"/></g></g></svg>
+                                    
+                                </div>
+                                <div class="item-all-text mt-3">
+                                    <h4 class="mb-0" style="color: #f9d0aa"><b>Info Bed RS</b></h4>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+                            <div class="item-all-card text-dark text-center "  style="background: #143f70 !important; border: 1px solid #2d5a89; border-radius: 10px ">
+                                <a href="#" data-toggle="modal" data-target="#modal-portal" data-kategori="publik" data-jenis="kesehatan"></a>
+                                <div class="iteam-all-icon ">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path class="st0"  d="M482.7,485.8l-22.6-132.6c-2.4-14.3-12.6-25.8-26.5-30l-61.1-18.4c-1.3-14.9-7.4-29-17.6-40.2 c-8.2-8.9-18.4-15.4-29.7-19c1.9-2.1,3.7-4.3,5.4-6.4c14.5-18.5,22.3-38.8,24.3-52.7h4.7c12.3,0,22.2-10,22.2-22.2v-11.4 c0-8.2-4.6-15.6-11.5-19.4v-27.4c0-4.1-3.4-7.5-7.5-7.5s-7.5,3.4-7.5,7.5v30.8c-2.9,0.5-6.4,1.4-10,2.9c-0.4,0.1-0.7,0.3-1.1,0.5 c-0.8,0.4-1.6,0.8-2.4,1.2V80.9c0-16.7-13.6-30.3-30.3-30.3h-20.7c-7.1,0-14.1,2.5-19.6,7l-2,1.7c-3.7,3-8.4,4.7-13.3,4.7 s-9.5-1.7-13.3-4.7l-2-1.7c-5.5-4.5-12.5-7-19.6-7h-20.7c-16.7,0-30.3,13.6-30.3,30.3v60.4c-0.8-0.4-1.6-0.8-2.4-1.2 c-0.3-0.2-0.7-0.3-1.1-0.5c-3.6-1.5-7-2.4-10-2.9V59c0-24.3,19.8-44,44-44h110.6c24.3,0,44,19.8,44,44v11.8c0,4.1,3.4,7.5,7.5,7.5 s7.5-3.4,7.5-7.5V59c0-32.5-26.5-59-59-59H200.7c-32.5,0-59,26.5-59,59v74.4c-6.9,3.8-11.5,11.3-11.5,19.4v11.4 c0,12.3,10,22.2,22.2,22.2h4.7c2,13.9,9.8,34.2,24.3,52.7c1.6,2.1,3.4,4.2,5.4,6.4c-26,8.3-44.9,31.6-47.3,59.2l-61.1,18.4 c-13.9,4.2-24,15.7-26.5,30L42.7,407c-0.7,4.1,2,8,6.1,8.7s8-2,8.7-6.1l9.2-53.8c1.5-8.6,7.6-15.6,16-18.1l56.5-17v14.8 c-13,2.4-24,11.3-28.5,23.6c-1.2,3.3-2,6.7-2.2,10.2l-5.5,70.1c-0.4,5.3,1.4,10.5,5,14.4s8.7,6.1,14,6.1h9.3 c4.1,0,7.5-3.4,7.5-7.5s-3.4-7.5-7.5-7.5H122c-1.1,0-2.2-0.5-3-1.3s-1.2-1.9-1.1-3.1l5.5-70.1c0.2-2.1,0.6-4.2,1.3-6.2 c3.2-8.6,11.7-14.4,21.2-14.4h1.2c0.1,0,0.1,0,0.2,0c9.3,0,17.5,5.3,20.9,13.4c1,2.3,1.6,4.7,1.8,7.2l5.5,70.1 c0.1,1.1-0.3,2.2-1.1,3.1c-0.8,0.8-1.9,1.3-3,1.3h-9.3c-4.1,0-7.5,3.4-7.5,7.5s3.4,7.5,7.5,7.5h9.3c5.3,0,10.4-2.2,14-6.1 s5.4-9.1,5-14.4l-5.5-70.1c-0.3-4.1-1.3-8.1-2.9-11.9c-4.9-11.7-15.5-19.8-27.9-22V316l25.8-7.8c2.3,4.9,7,15.6,16.2,38.6 c9.3,23.2,20.8,53,31.9,81.9c0.1,0.2,0.2,0.5,0.3,0.7c7.4,19.3,14.5,38.2,20.7,54.5c1.1,2.9,3.9,4.9,7,4.9s5.9-1.9,7-4.9 c6.1-16.3,13.3-35.2,20.7-54.5c0.1-0.2,0.2-0.5,0.3-0.7c11.1-28.9,22.6-58.6,31.8-81.9c9.2-23,13.9-33.7,16.2-38.7l25.8,7.8v44.3 c-17.9,3.5-31.4,19.2-31.4,38.1c0,21.4,17.4,38.8,38.8,38.8s38.8-17.4,38.8-38.8c0-18.8-13.4-34.5-31.2-38v-39.8l56.5,17 c8.4,2.5,14.5,9.5,16,18.1l22.6,132.6c0.4,2.2-0.2,4.3-1.6,6.1c-1.4,1.7-3.5,2.6-5.7,2.6H51.4c-2.2,0-4.3-0.9-5.7-2.6 s-2-3.9-1.6-6.1l7.5-43.8c0.7-4.1-2-8-6.1-8.7s-8,2-8.7,6.1l-7.5,43.8c-1.1,6.5,0.7,13.2,5,18.2c4.3,5.1,10.5,8,17.2,8h409.2 c6.6,0,12.9-2.9,17.2-8C482,499,483.8,492.3,482.7,485.8z M355.4,152.1c4-1,7.2-1,7.2-1c1.3,0,2.5-0.3,3.7-0.9 c0.3,0.8,0.5,1.7,0.5,2.7v11.4c0,4-3.2,7.2-7.2,7.2h-4.2V152.1L355.4,152.1z M156.6,171.5L156.6,171.5h-4.2c-4,0-7.2-3.2-7.2-7.2 v-11.4c0-0.9,0.2-1.8,0.5-2.7c1.1,0.6,2.4,0.9,3.7,0.9c0.1,0,3.3,0,7.2,1V171.5L156.6,171.5z M171.6,179.9v-19.7 c2.3,0.7,4.8,0.6,7.1-0.4c3.9-1.6,6.5-5.5,6.5-9.7V80.9c0-8.4,6.9-15.3,15.3-15.3h20.7c3.7,0,7.3,1.3,10.1,3.6l2,1.7 c6.4,5.2,14.5,8.1,22.7,8.1c8.3,0,16.3-2.9,22.7-8.1l2-1.7c2.9-2.3,6.5-3.6,10.1-3.6h20.7c8.4,0,15.3,6.9,15.3,15.3v69.2 c0,4.3,2.5,8.1,6.5,9.7c1.3,0.5,2.7,0.8,4.1,0.8c1,0,2-0.1,3-0.4v19.7c0,10.9-7.6,32.2-21.6,50c-4.6,5.9-10.6,12.3-18,17.8 c-0.2,0.2-0.5,0.3-0.7,0.5c-11.4,8.4-26,14.9-44.2,14.9s-32.8-6.5-44.2-14.9c-0.2-0.2-0.4-0.3-0.7-0.5c-7.4-5.5-13.3-11.9-18-17.8 C179.1,212.1,171.6,190.9,171.6,179.9z M305.1,301.1L256,337.8l-49.1-36.7c4.9-6.2,7.6-14.1,7.6-21.2v-12.1 c11.6,6.2,25.3,10.4,41.5,10.4s30-4.2,41.5-10.4v12.1C297.5,286.9,300.2,294.9,305.1,301.1z M194.4,292.7c-4-1.5-8.4-1.8-12.6-0.6 c-0.2,0-0.4,0.1-0.5,0.1l-25.9,7.8c4.4-21.5,21.9-38.7,44.2-42v21.8C199.5,284.5,197.4,289.4,194.4,292.7z M214.7,352.9v-0.1 c-0.4-1-0.8-1.9-1.1-2.8c-0.1-0.2-0.1-0.3-0.2-0.5c-0.4-0.9-0.7-1.8-1.1-2.7c0-0.1-0.1-0.1-0.1-0.2c-1.1-2.8-2.2-5.5-3.2-8 c-0.1-0.2-0.1-0.4-0.2-0.6c-0.3-0.7-0.6-1.5-0.9-2.2c-0.1-0.3-0.2-0.5-0.3-0.8c-0.3-0.7-0.6-1.4-0.8-2.1c-0.1-0.2-0.2-0.4-0.2-0.6 c-0.5-1.2-1-2.4-1.5-3.6c-0.1-0.3-0.3-0.6-0.4-0.9c-0.2-0.5-0.4-0.9-0.5-1.3c-0.2-0.5-0.4-1-0.6-1.4c-0.1-0.2-0.1-0.4-0.2-0.5 c-0.1-0.1-0.1-0.3-0.2-0.4c-0.9-2.1-1.7-4.1-2.5-6l0,0c-0.4-1-0.8-2-1.2-2.9c-0.2-0.5-0.4-1-0.6-1.4l42.2,31.6l-17.7,7.5h-0.1 l-7.3,3C215.5,355,215.1,353.9,214.7,352.9z M232.6,398.8c-1.5-3.8-3-7.7-4.5-11.6c-2.3-6-4.6-11.8-6.7-17.3l2.8-1.2l11.4,13.3 L232.6,398.8z M256.1,459.7c-0.2-0.4-0.5-0.9-0.8-1.3c-3.4-9-7.7-20.3-12.4-32.8l7-38.3H262l7,38.3 C264.1,438.8,259.6,450.6,256.1,459.7z M264.9,372.4h-17.8l-8.4-9.8l17.3-7.3l17.3,7.3L264.9,372.4z M283.9,387.2 c-1.5,3.9-3,7.7-4.5,11.6l-3.1-16.7l11.4-13.3l2.8,1.2C288.4,375.4,286.2,381.2,283.9,387.2z M312.6,315.2 c-0.4,0.9-0.8,1.8-1.1,2.7c-0.1,0.1-0.1,0.2-0.2,0.4c-0.4,0.9-0.8,1.9-1.2,2.9c0,0.1-0.1,0.1-0.1,0.2c-0.4,0.9-0.7,1.7-1.1,2.6 c-0.1,0.2-0.1,0.3-0.2,0.5s-0.2,0.4-0.3,0.6c-0.2,0.4-0.3,0.8-0.5,1.2c-0.2,0.5-0.4,1-0.6,1.5c-0.1,0.2-0.1,0.3-0.2,0.5 c-0.5,1.3-1.1,2.6-1.6,4c-0.1,0.2-0.2,0.4-0.3,0.6c-0.3,0.7-0.5,1.4-0.8,2c-0.1,0.3-0.2,0.5-0.3,0.8c-0.3,0.7-0.6,1.4-0.9,2.2 c-0.1,0.2-0.2,0.4-0.2,0.6c-1,2.5-2.1,5.2-3.2,7.9c0,0.1-0.1,0.2-0.1,0.3c-0.4,0.9-0.7,1.8-1.1,2.7c-0.1,0.2-0.1,0.3-0.2,0.5 c-0.4,0.9-0.8,1.9-1.1,2.9c0,0,0,0,0,0.1c-0.4,1-0.8,2.1-1.2,3.2l-7.4-3.1h-0.1l-17.7-7.5l42.2-31.6 C313,314.2,312.8,314.7,312.6,315.2z M330.8,292.2L330.8,292.2L330.8,292.2c-4.4-1.3-9-1.1-13.2,0.5c-3-3.3-5.1-8.2-5.1-12.9V258 c22.5,3.3,39.9,20.3,44.2,42L330.8,292.2z M389,398.4c0,13.1-10.7,23.8-23.8,23.8s-23.8-10.7-23.8-23.8s10.7-23.8,23.8-23.8 S389,385.3,389,398.4z"/> </g> </g> </svg>
+                                    
+                                </div>
+                                <div class="item-all-text mt-3">
+                                    <h4 class="mb-0" style="color: #f9d0aa"><b>Kesehatan</b></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+                            <div class="item-all-card text-dark text-center" style="background: #143f70 !important; border: 1px solid #2d5a89; border-radius: 10px">
+                                <a href="#" data-toggle="modal" data-target="#modal-portal" data-kategori="publik" data-jenis="media"></a>
+                                <div class="iteam-all-icon">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve"> <g> <g> <g> <path class="st0" d="M470,0H20C9,0,0,9,0,20v450c0,11,9,20,20,20h450c11,0,20-9,20-20V20C490,9,481,0,470,0z M470,470H20V90h450 V470z M470,70H20V20h450V70z"/> <rect x="40" y="35" class="st0" width="35"height="20"/> <rect x="90" y="35" class="st0" width="35" height="20"/> <rect x="415" y="35" class="st0" width="35" height="20"/> <path class="st0" d="M50,320h390c5.5,0,10-4.5,10-10V120c0-5.5-4.5-10-10-10H50c-5.5,0-10,4.5-10,10v190 C40,315.5,44.5,320,50,320z M60,130h370v170H60V130z"/> <rect x="230" y="260" class="st0" width="30" height="20"/> <rect x="280" y="260" class="st0" width="30" height="20"/> <rect x="180" y="260" class="st0" width="30" height="20"/> <path class="st0" d="M50,450h175c5.5,0,10-4.5,10-10v-90c0-5.5-4.5-10-10-10H50c-5.5,0-10,4.5-10,10v90C40,445.5,44.5,450,50,450 z M60,360h155v30H60V360z M60,410h155v20H60V410z"/> <path class="st0" d="M440,340H265c-5.5,0-10,4.5-10,10v90c0,5.5,4.5,10,10,10h175c5.5,0,10-4.5,10-10v-90 C450,344.5,445.5,340,440,340z M430,430H275v-20h155V430z M430,390H275v-30h155V390z"/> </g> </g> </g> </svg>
+                                    
+                                </div>
+                                <div class="item-all-text mt-3">
+                                    <h4 class="mb-0" style="color: #f9d0aa"><b>Suara Banjar</b></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+                            <div class="item-all-card text-dark text-center" style="background: #143f70 !important; border: 1px solid #2d5a89; border-radius: 10px">
+                                <a href="#" data-toggle="modal" data-target="#modal-portal" data-kategori="publik" data-jenis="pengaduan"></a>
+                                <div class="iteam-all-icon">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g transform="translate(0 1)"> <g> <path class="st0" d="M486.4,424c-50.9-27-90-42.2-124.8-48l3.6-4.9c1.7-1.7,2.6-4.3,1.7-6.8l-8-32c2.9-4.1,5.6-8.3,8.2-12.7 c31.8-10.8,47.9-29.1,50.6-56.1c14-0.7,26-13.2,26-27.3v-64c0-14-11.1-26.4-25.8-27.3C416.1,95.7,394.4-1,256-1S95.9,95.7,94,145 c-13.9,0.8-25.7,12.4-25.7,27.3v64c0,14.5,12.8,27.3,28.2,27.3h12.8c4.7,0,9.2-1.4,13.2-3.7c4.8,25.7,15.5,50.9,30.7,72.4l-8,32 c0,1.7,0,4.3,1.7,6.8l3.6,4.9c-34.8,5.8-73.8,21-124.8,48C9.4,431.6,0,447.9,0,465.8v36.7c0,5.1,3.4,8.5,8.5,8.5h204.8h3.4h78.5 h3.4h204.8c5.1,0,8.5-3.4,8.5-8.5v-36.7C512,448.7,501.8,432.5,486.4,424z M256,404.4l20.4,46.8h-41.2L256,404.4z M229,468.3h53.9 l5,25.6h-64L229,468.3z M345.6,348.9l3.4,15.4l-8.7,12c-0.6,0.5-1.1,1-1.5,1.7l-35.5,49L292,442.5l-23-51.8 c28.1-3.4,53-17.7,73.1-38.2C343.3,351.3,344.4,350.1,345.6,348.9z M378.9,295.8c4.8-11.7,8.4-23.9,10.7-36.2 c3.2,2,6.9,3.3,10.9,3.7C399.1,275.4,393.8,286.8,378.9,295.8z M425.8,171.4v64c0,5.1-4.3,10.2-10.2,10.2h-12.8 c-5.1,0-10.2-4.3-10.2-10.2v-6v-58c0-5.1,4.3-10.2,10.2-10.2h12.8C420.7,161.1,425.8,165.4,425.8,171.4z M256,16.1 c52.6,0,141.1,17.2,144.9,129c-3.6,0.4-7,1.5-10.1,3.1c-10.4-65-67-115.1-134.8-115.1s-124.4,50.1-134.8,115 c-3.1-1.6-6.5-2.7-10.1-3.1C114.9,33.2,203.4,16.1,256,16.1z M118.6,235.4c0,5.1-4.3,10.2-10.2,10.2H95.6 c-5.1,0-10.2-4.3-10.2-10.2v-64c0-5.1,4.3-10.2,10.2-10.2h12.8c5.1,0,10.2,4.3,10.2,10.2V235.4z M136.5,169.7 c0-65.7,53.8-119.5,119.5-119.5S375.5,104,375.5,169.7v59.7c0,28.2-7.4,54.1-19.3,75.9c-20.4,5.9-49.7,9.4-91.7,9.4 c-5.1,0-8.5,3.4-8.5,8.5s3.4,8.5,8.5,8.5c30.7,0,56.5-1.9,77.5-5.8c-0.5,0.5-1,1-1.6,1.6c-4.3,5.7-8.8,10.9-13.6,15.6 c-20.1,18.7-44.1,30.1-67.2,31.2c-1.2-0.5-2.5-0.8-3.8-0.8s-2.5,0.3-3.6,0.8c-14.1-0.6-28.6-5.1-42.3-12.8 c-13.9-8-27-19.5-38.6-34c-0.9-0.9-1.7-1.7-2.6-2.6l-0.5-0.2c-19.2-25.1-31.9-58.2-31.9-95.4L136.5,169.7L136.5,169.7z M243,390.7 l-23,51.8L208.7,427l-35.5-49.1c-0.3-0.3-0.6-0.5-0.9-0.8l-9.4-12.8l3.4-15.4c1.2,1.2,2.3,2.5,3.5,3.6 C189.9,373,214.9,387.3,243,390.7z M17.1,465.8c0-11.1,6-21.3,16.2-26.5c54.4-28.9,93.5-43.4,128.4-47.7l50.9,70l-6.5,32.3h-189 V465.8z M494.9,493.9H305.8l-6.5-32.3l51.5-70.8c34.8,5.2,74.6,19.7,127.9,47.6c10.2,6,16.2,16.2,16.2,27.3V493.9L494.9,493.9z"/> </g> </g> </svg>
+                                    
+                                </div>
+                                <div class="item-all-text mt-3">
+                                    <h4 class="mb-0" style="color: #f9d0aa"><b>Pengaduan</b></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+                            <div class="item-all-card text-dark text-center" style="background: #143f70 !important; border: 1px solid #2d5a89; border-radius: 10px">
+                                <a href="#" data-toggle="modal" data-target="#modal-portal" data-kategori="publik" data-jenis="perizinan"></a>
+                                <div class="iteam-all-icon">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 484.8 484.8" style="enable-background:new 0 0 484.8 484.8;" xml:space="preserve"> <g> <g> <g> <path class="st0" d="M427.8,0h-356c-11,0-19.9,8.9-19.9,19.9v54.3H37.1v20h14.7v59.1H37.1v20h14.7v59.1H37.1v20h14.7v59.1H37.1 v20h14.7v59.1H37.1v20h14.7v54.3c0,11,8.9,19.9,19.9,19.9h356c11,0,19.9-8.9,19.9-19.9v-445C447.6,8.9,438.7,0,427.8,0z M101.3,464.8H71.9v-54.2h14.7v-20H71.9v-59.1h14.7v-20H71.9v-59.1h14.7v-20H71.9v-59.1h14.7v-20H71.9V94.2h14.7v-20H71.9V20 h29.4V464.8L101.3,464.8z M121.3,464.8V20h306.3v444.8H121.3z"/> <path class="st0" d="M403,34.6H145.9c-5.5,0-10,4.5-10,10v128.6c0,5.5,4.5,10,10,10H403c5.5,0,10-4.5,10-10V44.6 C413,39.1,408.5,34.6,403,34.6z M393,163.2L393,163.2H155.9v-24.5h212.5v-20H155.9V54.6H393V163.2L393,163.2z"/> <rect x="323.9" y="400.5" class="st0" width="89" height="20"/> <rect x="393.1" y="430.2" class="st0" width="19.8" height="20"/> <rect x="363.5" y="430.2" class="st0" width="19.8" height="20"/> <rect x="165.7" y="212.6" class="st0" width="217.6" height="20"/> <rect x="165.7" y="252.2" class="st0" width="217.6" height="20"/> </g> </g> </g> </svg>
+                                    
+                                </div>
+                                <div class="item-all-text mt-3">
+                                    <h4 class="mb-0" style="color: #f9d0aa"><b>Perizinan</b></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+                            <div class="item-all-card text-dark text-center" style="background: #143f70 !important; border: 1px solid #2d5a89; border-radius: 10px">
+                                <a href="#" data-toggle="modal" data-target="#modal-portal" data-kategori="publik" data-jenis="pariwisata"></a>
+                                <div class="iteam-all-icon">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 511" style="enable-background:new 0 0 512 511;" xml:space="preserve"> <path class="st0" d="M241.2,257.1c-3.9,3.9-3.9,10.2,0,14.1s10.2,3.9,14.1,0s3.9-10.2,0-14.1C251.5,253.2,245.1,253.2,241.2,257.1z" /> <path class="st0" d="M400.2,29.8c-17.2,13.3-21.8,20.1-82.7,80.4l-36.5-5.9l16.7-16.7c11.7-11.7,11.7-30.7,0-42.4s-30.7-11.7-42.4,0 L208,92.5L42.7,65.4c-10.7-1.7-21.6,1.8-29.3,9.4c-14.7,14.7-12.7,39,4.1,51.2l164.8,119.4l-30.9,30.9 c-10.6,10.6-21.7,25.1-33.1,43.3L41.4,297c-11.3-3.3-23.6-0.2-32,8.2c-14.3,14.3-12.1,38,4.5,49.4l63,43.6 c-11,24.2-17.6,41.7-17.9,42.5c-1.4,3.7-0.5,7.8,2.3,10.6c2.8,2.8,7,3.7,10.6,2.3c0.8-0.3,18.3-7,42.5-17.9l43.6,63 c11.5,16.6,35.2,18.7,49.4,4.4c8.4-8.4,11.5-20.6,8.1-32L193,394.2c18.2-11.4,32.7-22.6,43.3-33.1l30.9-30.9L386.5,495 c12.2,16.8,36.5,18.8,51.2,4.1c7.6-7.6,11.2-18.6,9.4-29.3l-26.9-165.4l47.3-47.3c11.7-11.7,11.7-30.7,0-42.4s-30.7-11.7-42.4,0 l-16.7,16.7l-5.9-36.5c60.3-60.9,67-65.5,80.3-82.6c0,0,0,0,0.1-0.1c30.8-40,38.1-80.3,17.9-100.5C480.6-8.3,440.2-1.1,400.2,29.8z M269.5,59.2c3.9-3.9,10.2-3.9,14.1,0s3.9,10.2,0,14.1l-26.9,26.9l-24.3-4L269.5,59.2z M29.2,109.8c-6.8-4.9-7.6-14.9-1.6-20.8 c3.1-3.1,7.6-4.6,11.9-3.9l260.6,42.4L196.6,231L29.2,109.8z M23.6,319.2c3.2-3.2,7.9-4.4,12.2-3.1l71.9,21.1 c-7.4,12.9-14.8,27.1-22.2,42.5L25.3,338C19,333.7,18.2,324.6,23.6,319.2z M193.3,488.9c-5.4,5.4-14.4,4.7-18.8-1.7L132.8,427 c15.4-7.4,29.6-14.8,42.5-22.2l21.1,71.9C197.7,481,196.5,485.7,193.3,488.9z M439.2,228.9c3.9-3.9,10.2-3.9,14.1,0s3.9,10.2,0,14.1 l-37.1,37.1l-4-24.3L439.2,228.9z M427.4,473c0.7,4.4-0.7,8.8-3.8,11.9c-5.9,5.9-15.9,5.2-20.8-1.7L281.5,315.9L385,212.4L427.4,473 z M222.1,346.9c-11,11-27.1,22.9-47.9,35.3c-27,16.2-58.9,31.5-87.7,43.7c12.6-29.6,28.2-62,44.7-89.3c12.1-20,23.6-35.5,34.4-46.3 C409.9,46.7,395.4,59.2,410.2,47.4c16.4-1.1,30.9,3.8,41,13.9s15,24.6,13.9,41C453.2,117.1,465.7,102.8,222.1,346.9z M482.2,76 c-3.2-11-8.9-20.9-16.9-28.9s-17.8-13.7-28.9-16.9c14.5-7.3,38.8-15.6,50.1-4.3C495.4,34.8,493.2,54.3,482.2,76z"/> <path class="st0" d="M297.8,200.6l-28.3,28.3c-3.9,3.9-3.9,10.2,0,14.1s10.2,3.9,14.1,0l28.3-28.3c3.9-3.9,3.9-10.2,0-14.1 S301.7,196.7,297.8,200.6z"/> <path class="st0" d="M354.4,144l-28.3,28.3c-3.9,3.9-3.9,10.2,0,14.1c3.9,3.9,10.2,3.9,14.1,0l28.3-28.3c3.9-3.9,3.9-10.2,0-14.1 S358.3,140.1,354.4,144z"/> </svg>
+                                    
+                                </div>
+                                <div class="item-all-text mt-3">
+                                    <h4 class="mb-0" style="color: #f9d0aa"><b>Pariwisata</b></h4>
+                                </div>
+                            </div>
+                        </div>                       
+                        <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+                            <div class="item-all-card text-dark text-center" style="background: #143f70 !important; border: 1px solid #2d5a89; border-radius: 10px">
+                                <a href="#" data-toggle="modal" data-target="#modal-portal" data-kategori="publik" data-jenis="ketenagakerjaan"></a>
+                                <div class="iteam-all-icon">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480.2 480.2" style="enable-background:new 0 0 480.2 480.2;" xml:space="preserve"> <g> <g> <g> <rect x="221.8" y="383.8" class="st0" width="58.1" height="20"/> <path class="st0" d="M394.4,330.2c-11.2-3.8-28.1-11-35.5-16.5v-18.6c25.2-14.4,42.6-39.7,48.9-71c16.1-3.9,27.5-19.7,27.5-34 c0-13.4-9.5-22.9-24.9-25.7V153c0.1-4.2,1.1-53.9-30.3-86.6c-17.5-18.2-41.4-27.5-71-27.5s-53.3,9.1-70.7,27 c-17.4-17.9-41.1-27-70.5-27c-29.7,0-53.6,9.3-71.2,27.5C65.4,99,66.4,148.6,66.5,152.9v11.4c-15.4,2.8-24.9,12.3-24.9,25.7 c0,14.4,11.3,30.2,27.5,34c6.2,30.5,23,55.4,47.2,70v16.4c-7.2,6.3-22,15-31.2,19.9C1.9,357.6,0,408,0,410.1c0,0.1,0,0.1,0,0.2 v20.8c0,5.5,4.5,10,10,10h460.2c5.5,0,10-4.5,10-10v-20.9C480.1,408.1,479,357,394.4,330.2z M410.4,185.1 c2.7,0.9,4.9,2.5,4.9,5.1c0,3.1-1.9,7.2-5,10.3C410.4,199.8,410.4,185.1,410.4,185.1z M61.6,190.2c0-2.6,2.2-4.2,4.9-5.1 c0,0,0,14.8,0,15.4C63.5,197.4,61.6,193.3,61.6,190.2z M390.4,198.6L390.4,198.6c0,4.9-0.3,10-1,15 c-4.1,30.5-20.5,54.7-44.8,66.6c0,0-0.1,0-0.1,0.1c-10.5,5.3-22.4,8-35.4,8s-24.8-2.7-35.4-8c-0.1,0-0.1,0-0.2-0.1 c-8.5-4.1-16-9.8-22.6-17c7.4-11.4,12.7-24.6,15.7-38.9c16.1-3.8,27.5-19.7,27.5-34c0-13.4-9.5-22.9-24.9-25.7v-8.3 c15.2-3.3,31.6-8.5,40-18c14.8,8.3,44.4,22.2,81.1,24.4L390.4,198.6L390.4,198.6z M338.9,303.9v10.6c-2.2,2.3-6.5,6-12.6,8.5 c-4.3,1.8-9,2.6-14,2.6c-6.4,0-13.1-1.5-19.7-4.3c-5.9-2.6-10.6-5.7-13.4-7.8V304c9.4,2.9,19.4,4.3,29.9,4.3 C319.6,308.2,329.6,306.8,338.9,303.9z M276.3,335.4l-1.5,4.4c-3.6-1.7-7.4-3.3-11.4-4.9c2.1-1.2,4.2-2.5,6.1-3.9 C271.4,332.4,273.7,333.9,276.3,335.4z M259.2,295.2v18.6c-4.4,3.4-11.6,7.1-17.1,9.9c-0.6,0.3-1.2,0.6-1.8,0.9 c-9.2-5.3-16.6-10.3-20.9-14v-16.4c7-4.2,13.4-9.3,19.1-15.2C244.7,285.5,251.6,290.9,259.2,295.2z M269.2,200.5 c0-0.6,0-15.4,0-15.4c2.7,0.9,4.9,2.5,4.9,5.1C274.1,193.3,272.2,197.4,269.2,200.5z M309.1,59c23.9,0,42.9,7.1,56.5,21.2 c18.6,19.3,23.3,47.4,24.5,62.3c-45.3-3.3-79-26.6-79.4-26.9c-3.1-2.2-7.1-2.4-10.4-0.7c-3.3,1.7-5.4,5.1-5.4,8.9 c0,1.3-5,7-26.6,12.1c-1.6-14.2-5.9-35-17.5-53.8C264.6,66.8,284.1,59,309.1,59z M111.1,80.4C124.7,66.2,143.8,59,167.8,59 c27.4,0,48.4,9.4,62.3,28.1c14.1,19,17.8,43,18.8,55.4c-45.3-3.3-79.1-26.6-79.4-26.9c-3.1-2.2-7.1-2.4-10.4-0.7 c-3.3,1.7-5.4,5.1-5.4,8.9c0,1.4-6.3,8.5-35.3,14c-11.6,2.2-23.4,3.5-31.5,4.3C88,127.3,92.7,99.6,111.1,80.4z M87.5,213.6 c-0.7-5.1-1-10.1-1-15v-36.3c8.6-0.7,22-2.1,35.4-4.7c9.7-1.9,34.7-6.6,46-19.3c14.8,8.3,44.5,22.2,81.3,24.4v36 c0,4.9-0.3,10-1,15c-2.4,16.9-8.6,32.3-17.9,44.3l-0.1,0.1c-7,9.3-15.7,16.6-26,21.8c-10.9,5.6-23.1,8.5-36.4,8.5 s-25.5-2.8-36.4-8.5C107.6,267.7,91.6,243.6,87.5,213.6z M199.4,303.4v7.5c-2.9,2.8-8.3,7.6-15.4,11c-10.7,5.1-21.6,5.1-32.3,0 c-7.1-3.4-12.6-8.1-15.4-11v-7.5c9.9,3.2,20.5,4.9,31.6,4.9C178.9,308.2,189.5,306.6,199.4,303.4z M20,421.1v-10.6 c0.1-1.1,0.9-10.1,9.3-21.7c15.1-20.9,63.8-40,64.3-40.3c2.4-1.3,20.1-10.6,32.3-20.1c2.5,2.2,5.7,4.6,9.3,7l-10.1,30.2 c-0.7,2.1-0.7,4.3,0,6.3l16.4,49.1H20V421.1z M173.1,421.1h-10.5l-17.4-52.3l8.4-25.1c9.4,2.5,19.1,2.5,28.6,0l8.4,25.1 L173.1,421.1z M315.6,416.9l-1.4,4.2H194.1l16.4-49.1c0.7-2.1,0.7-4.3,0-6.3l-10.1-30.2c3.6-2.3,6.8-4.8,9.3-7 c7.5,5.9,17.4,11.7,25.4,16.2c4.1,2.4,6.9,3.8,7,3.9c0.5,0.3,1,0.5,1.6,0.7c12.3,3.9,22.8,8.3,32,13.5 c38.1,21.1,39.8,46.1,39.9,47.7V416.9z M326.8,383.4c-6.1-10.5-16.5-22.7-34.2-33.9l2.2-6.3c5.9,1.6,11.7,2.4,17.6,2.4 c3.9,0,7.6-0.4,11.3-1.1l8.1,24.3L326.8,383.4z M460.2,421.1H335.6v-0.9l16.1-48.2c0.7-2.1,0.7-4.3,0-6.3l-9.5-28.4 c3-1.8,5.5-3.7,7.6-5.5c13.2,8.7,33.5,15.9,38.2,17.5c0.1,0,48,18.6,63,39.5c8.4,11.8,9.1,20.9,9.1,21.7L460.2,421.1L460.2,421.1 z"/> <rect x="363" y="383.8" class="st0" width="58.1" height="20"/> </g> </g> </g> </svg>
+                                    
+                                </div>
+                                <div class="item-all-text mt-3">
+                                    <h4 class="mb-0" style="color: #f9d0aa"><b>Ketenagakerjaan</b></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+                            <div class="item-all-card text-dark text-center" style="background: #143f70 !important; border: 1px solid #2d5a89; border-radius: 10px">
+                                <a href="#" data-toggle="modal" data-target="#modal-portal" data-kategori="publik" data-jenis="pengumuman"></a>
+                                <div class="iteam-all-icon">
+                                    <svg  viewBox="0 0 64 64"  xmlns="http://www.w3.org/2000/svg"><g id="Advertisment-Browser-Online-Megaphone-Commerce"><path class="st0" d="m10 55v-3h19v-2h-24a1 1 0 0 1 -1-1v-37h46v17h2v-12h4v10h2v-16a3 3 0 0 0 -3-3h-3v-3a3 3 0 0 0 -3-3h-44a3 3 0 0 0 -3 3v44a3 3 0 0 0 3 3h3v3a3 3 0 0 0 3 3h25v-2h-25a1 1 0 0 1 -1-1zm45-45a1 1 0 0 1 1 1v4h-4v-5zm-50-6h44a1 1 0 0 1 1 1v5h-46v-5a1 1 0 0 1 1-1z"/><path class="st0" d="m56 55a1 1 0 0 1 -1 1h-6v2h6a3 3 0 0 0 3-3v-4h-2z"/><path class="st0" d="m8 6h2v2h-2z"/><path class="st0" d="m12 6h2v2h-2z"/><path class="st0" d="m16 6h2v2h-2z"/><path class="st0" d="m21 28a1 1 0 0 0 1-1v-10a1 1 0 0 0 -1-1h-12a1 1 0 0 0 -1 1v10a1 1 0 0 0 1 1zm-11-10h10v8h-10z"/><path class="st0" d="m26 16h2v2h-2z"/><path class="st0" d="m30 16h2v2h-2z"/><path class="st0" d="m34 16h8v2h-8z"/><path class="st0" d="m26 20h16v2h-16z"/><path class="st0" d="m26 24h16v2h-16z"/><path class="st0" d="m26 28h16v2h-16z"/><path class="st0" d="m8 32h18v2h-18z"/><path class="st0" d="m8 36h18v2h-18z"/><path class="st0" d="m8 40h18v2h-18z"/><path class="st0" d="m8 44h18v2h-18z"/><path class="st0" d="m43.805 50.465 7.565-1.09a2.983 2.983 0 0 0 3.656.527 3.005 3.005 0 0 0 1.1-4.1l-2.5-4.33a3 3 0 0 0 -3-5.2l-2.5-4.33a3 3 0 0 0 -5.471 2.334l-6.186 7.86-5.03 2.9a3.005 3.005 0 0 0 -1.1 4.1l2 3.464a3 3 0 0 0 4.1 1.1l3.5 6.062a3 3 0 0 0 4.1 1.1l1.732-1a3 3 0 0 0 1.1-4.1zm9.185-12.09a1 1 0 0 1 -.365 1.366l-1-1.732a1 1 0 0 1 1.365.366zm-7.964-5.793a1 1 0 0 1 1.366.365l8 13.857a1 1 0 1 1 -1.731 1l-8-13.857a1 1 0 0 1 .365-1.365zm-1.359 3.644 6.523 11.3-8.529 1.228-3.323-5.754zm-6.9 8.052 3 5.2-1.732 1-3-5.2zm-2.7 7.33-2-3.464a1 1 0 0 1 .366-1.366l.866-.5 3 5.2-.866.5a1 1 0 0 1 -1.361-.37zm10.7 6.526-1.732 1a1 1 0 0 1 -1.366-.366l-3.5-6.062 3.3-1.9.2-.029 3.461 5.995a1 1 0 0 1 -.362 1.362z"/><path class="st0" d="m56.187 34.375h4v2h-4z" transform="matrix(.866 -.5 .5 .866 -9.892 33.835)"/><path class="st0" d="m52.016 30.363h4.243v2h-4.243z" transform="matrix(.259 -.966 .966 .259 9.831 75.538)"/><path class="st0" d="m58.638 38.768h2v4.243h-2z" transform="matrix(.259 -.966 .966 .259 4.707 87.912)"/></g></svg></div>
+                                <div class="item-all-text mt-3">
+                                    <h4 class="mb-0" style="color: #f9d0aa"><b>Pengumuman</b></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card" style="box-shadow: none; background:none !important; border:none; color:#fff700;">
+                                <div class="card-body" style="padding: 10px 0 0 0 !important;">
+                                    <div class="text-center">
+                                        <h3 class="mb-1" style="letter-spacing: normal !important; color: #f9d0aa"><b>PEMERINTAHAN</b></h3>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+                            <div class="item-all-card text-dark text-center" style="background: #143f70 !important; border: 1px solid #2d5a89; border-radius: 10px">
+                                <a href="#" data-toggle="modal" data-target="#modal-portal" data-kategori="pemerintahan" data-jenis="kepegawaian"></a>
+                                <div class="iteam-all-icon">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" style="enable-background:new 0 0 55 55;" xml:space="preserve"> <path class="st0" d="M55,27.5C55,12.3,42.7,0,27.5,0S0,12.3,0,27.5c0,8,3.4,15.2,8.9,20.3l0,0l0.9,0.8c0.1,0,0.1,0.1,0.2,0.1 c0.5,0.4,1,0.8,1.5,1.1c0.2,0.1,0.3,0.2,0.5,0.3c0.5,0.4,1.1,0.7,1.6,1c0.1,0.1,0.2,0.1,0.4,0.2c0.6,0.3,1.2,0.7,1.9,1 c0,0,0.1,0,0.1,0.1c2.1,1,4.3,1.7,6.7,2.1c0.1,0,0.1,0,0.2,0c0.7,0.1,1.5,0.2,2.2,0.3c0.1,0,0.2,0,0.3,0C26,55,26.7,55,27.5,55 c0.7,0,1.5,0,2.2-0.1c0.1,0,0.2,0,0.3,0c0.7-0.1,1.5-0.2,2.2-0.3c0.1,0,0.1,0,0.2,0c2.3-0.4,4.5-1.1,6.6-2.1c0.1,0,0.2-0.1,0.2-0.1 c0.6-0.3,1.2-0.6,1.8-0.9c0.1-0.1,0.3-0.2,0.4-0.3c0.5-0.3,1.1-0.6,1.6-1c0.2-0.1,0.4-0.3,0.5-0.4c0.4-0.3,0.9-0.6,1.3-1 c0.1-0.1,0.2-0.1,0.3-0.2l0.9-0.8l0,0C51.5,42.8,55,35.5,55,27.5z M2,27.5C2,13.4,13.4,2,27.5,2S53,13.4,53,27.5 c0,7.6-3.3,14.4-8.6,19.1c-0.3-0.2-0.6-0.4-0.9-0.5L35,41.9c-0.8-0.4-1.2-1.1-1.2-2v-3c0.2-0.2,0.4-0.5,0.6-0.8 c1.1-1.5,2-3.3,2.6-5.1c1.3-0.6,2.1-1.9,2.1-3.3v-3.5c0-0.9-0.3-1.7-0.9-2.4V17c0.1-0.5,0.2-3.4-1.9-5.9c-1.8-2-4.8-3.1-8.8-3.1 s-7,1.1-8.9,3.2c-2.1,2.4-1.9,5.3-1.9,5.9v4.7c-0.6,0.7-0.9,1.5-0.9,2.4v3.5c0,1.1,0.5,2.1,1.3,2.8c0.8,3.2,2.5,5.6,3.1,6.4v2.9 c0,0.8-0.4,1.6-1.2,2L11.2,46c-0.3,0.1-0.5,0.3-0.8,0.5C5.3,41.8,2,35,2,27.5z M42.5,48.1c-0.3,0.3-0.7,0.5-1.1,0.7 c-0.2,0.1-0.3,0.2-0.5,0.3c-0.5,0.3-1,0.6-1.4,0.8c-0.1,0.1-0.2,0.1-0.3,0.2c-1.1,0.6-2.3,1.1-3.5,1.5h-0.1 c-0.6,0.2-1.3,0.4-1.9,0.6l0,0c-0.6,0.2-1.3,0.3-2,0.4c0,0,0,0-0.1,0c-0.6,0.1-1.2,0.2-1.9,0.2c-0.1,0-0.2,0-0.3,0 c-0.6,0-1.2,0.1-1.9,0.1c-0.6,0-1.3,0-1.9-0.1c-0.1,0-0.2,0-0.3,0c-0.6-0.1-1.3-0.1-1.9-0.2h-0.1c-1.3-0.2-2.6-0.5-3.9-1h-0.1 c-0.6-0.2-1.3-0.5-1.9-0.7l0,0c-0.6-0.2-1.1-0.5-1.7-0.8c-0.1,0-0.1-0.1-0.2-0.1c-0.5-0.3-1-0.6-1.5-0.9c-0.1-0.1-0.3-0.2-0.4-0.3 c-0.5-0.3-0.9-0.6-1.3-0.9l-0.1-0.1c0,0,0.1,0,0.1-0.1l7.9-4.3c1.4-0.7,2.2-2.2,2.2-3.7v-3.6l-0.2-0.3c0,0-2.2-2.7-3-6.2L19,29.2 L18.6,29c-0.5-0.3-0.8-0.8-0.8-1.4v-3.5c0-0.5,0.2-0.9,0.6-1.2l0.3-0.3V17v-0.1c0,0-0.3-2.4,1.4-4.4c1.4-1.6,3.9-2.5,7.4-2.5 c3.4,0,5.9,0.8,7.3,2.5c1.7,1.9,1.4,4.4,1.4,4.4v5.7l0.3,0.3c0.4,0.3,0.6,0.8,0.6,1.2v3.5c0,0.7-0.5,1.4-1.2,1.6l-0.5,0.2l-0.2,0.5 c-0.6,1.8-1.4,3.5-2.5,5c-0.3,0.4-0.5,0.7-0.7,0.9l-0.2,0.3v3.7c0,1.6,0.9,3.1,2.3,3.8l8.5,4.2c0.1,0,0.1,0.1,0.2,0.1 C42.7,48,42.6,48.1,42.5,48.1z"/> </svg>
+
+                                    
+                                </div>
+                                <div class="item-all-text mt-3">
+                                    <h4 class="mb-0" style="color: #f9d0aa"><b>Kepegawaian</b></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+                            <div class="item-all-card text-dark text-center" style="background: #143f70 !important; border: 1px solid #2d5a89; border-radius: 10px">
+                                <a href="#" data-toggle="modal" data-target="#modal-portal" data-kategori="pemerintahan" data-jenis="perencanaan"></a>
+                                <div class="iteam-all-icon">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve"> <g> <g> <g> <path class="st0" d="M10,372.5h405c2.6,0,5.2-1,7.1-2.9l65-65c1.9-1.9,2.9-4.5,2.9-7.1l0,0v-245c0-5.5-4.5-10-10-10H10 c-5.5,0-10,4.5-10,10v310C0,368,4.5,372.5,10,372.5z M425,338.4v-30.9h30.9L425,338.4z M20,62.5h450v225h-55c-5.5,0-10,4.5-10,10 v55H20V62.5z"/> <path class="st0" d="M350,92.5H250c-5.5,0-10,4.5-10,10v15h-25c-5.5,0-10,4.5-10,10v75h-80v-35h55c5.5,0,10-4.5,10-10v-60 c0-5.5-4.5-10-10-10H60c-5.5,0-10,4.5-10,10v60c0,5.5,4.5,10,10,10h45v45c0,5.5,4.5,10,10,10h90v70c0,5.5,4.5,10,10,10h25v10 c0,5.5,4.5,10,10,10h100c5.5,0,10-4.5,10-10v-50c0-5.5-4.5-10-10-10H250c-5.5,0-10,4.5-10,10v20h-15v-60h15v10 c0,5.5,4.5,10,10,10h100c5.5,0,10-4.5,10-10v-50c0-5.5-4.5-10-10-10H250c-5.5,0-10,4.5-10,10v20h-15v-65h15v15 c0,5.5,4.5,10,10,10h100c5.5,0,10-4.5,10-10v-50C360,97,355.5,92.5,350,92.5z M70,147.5v-40h100v40H70z M260,272.5h80v30h-80 V272.5z M260,192.5h80v30h-80V192.5z M340,142.5h-80v-30h80V142.5z"/> <rect x="50" y="247.5" class="st0" width="75" height="20"/> <rect x="50" y="277.5" class="st0" width="75" height="20"/> <rect x="50" y="307.5" class="st0" width="130" height="20"/> <rect x="135" y="247.5" class="st0" width="20" height="20"/> <rect x="380" y="92.5" class="st0" width="25" height="20"/> <rect x="420" y="92.5" class="st0" width="25" height="20"/> <rect x="380" y="122.5" class="st0" width="25" height="20"/> <rect x="420" y="122.5" class="st0" width="25" height="20"/> <rect x="380" y="152.5" class="st0" width="25" height="20"/> <rect x="420" y="152.5" class="st0" width="25" height="20"/> <rect x="380" y="182.5" class="st0" width="25" height="20"/> <rect x="420" y="182.5" class="st0" width="25" height="20"/> <path class="st0" d="M483.2,408l-60-20c-1-0.3-2.1-0.5-3.2-0.5l0,0H10c-5.5,0-10,4.5-10,10v40c0,5.5,4.5,10,10,10h410l0,0 c1.1,0,2.1-0.2,3.2-0.5l60-20c4.1-1.4,6.8-5.2,6.8-9.5S487.2,409.4,483.2,408z M60,427.5H20v-20h40V427.5z M410,427.5H80v-20h330 V427.5z M430,423.6v-12.3l18.4,6.1L430,423.6z"/> </g> </g> </g> </svg>
+                                    
+                                </div>
+                                <div class="item-all-text mt-3">
+                                    <h4 class="mb-0" style="color: #f9d0aa"><b>Perencanaan</b></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+                            <div class="item-all-card text-dark text-center" style="background: #143f70 !important; border: 1px solid #2d5a89; border-radius: 10px">
+                                <a href="#" data-toggle="modal" data-target="#modal-portal" data-kategori="pemerintahan" data-jenis="kearsipan"></a>
+                                <div class="iteam-all-icon">
+                                    <svgversion="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve"> <g> <g> <path class="st0" d="M304,128c-13.3,0-24,10.7-24,24v8h16v-8c0-4.4,3.6-8,8-8s8,3.6,8,8v8h16v-8C328,138.7,317.3,128,304,128z"/> </g> </g> <g> <g> <path class="st0" d="M384,128c-13.3,0-24,10.7-24,24v8h16v-8c0-4.4,3.6-8,8-8s8,3.6,8,8v8h16v-8C408,138.7,397.3,128,384,128z"/> </g> </g> <g> <g> <path class="st0" d="M360,184v8c0,8.8-7.2,16-16,16s-16-7.2-16-16v-8h-16v8c0,17.7,14.3,32,32,32s32-14.3,32-32v-8H360z"/> </g> </g> <g> <g> <path class="st0" d="M424,256h-40v-8.8c29-13.1,49.4-39.8,54.6-71.2h9.4c13.3,0,24-10.7,24-24s-10.7-24-24-24h-8V0H320 c-39.7,0-72,32.3-72,72v56h-8c-13.3,0-24,10.7-24,24s10.7,24,24,24h9.4c5.2,31.4,25.7,58.1,54.6,71.2v8.8h-40 c-30.9,0-56,25.1-56,56v8h-48v-8c0-13.3-10.7-24-24-24h-32c-13.3,0-24,10.7-24,24v8H8c-4.4,0-8,3.6-8,8v144c0,4.4,3.6,8,8,8h464 c4.4,0,8-3.6,8-8V312C480,281.1,454.9,256,424,256z M440,144h8c4.4,0,8,3.6,8,8s-3.6,8-8,8h-8V144z M248,160h-8c-4.4,0-8-3.6-8-8 s3.6-8,8-8h8V160z M408,272l-32.9,43.8l-1.5-1.5L355.3,296l24-24H408z M356.7,320l-8,8h-9.4l-8-8l12.7-12.7L356.7,320z M331.3,272 h25.4L344,284.7L331.3,272z M264,72c0-30.9,25.1-56,56-56h104v48h-72v8c0,13.3-10.7,24-24,24h-64V72z M264,160v-48h64 c19,0,35.4-13.4,39.2-32H424v80c0.1,33-20.1,62.6-50.9,74.5c-3.1,1.2-5.1,4.2-5.1,7.4V256h-48v-14.1c0-3.3-2-6.2-5.1-7.4 C284.1,222.6,263.9,193,264,160z M308.7,272l24,24l-18.3,18.3l-1.5,1.5L280,272H308.7z M96,312c0-4.4,3.6-8,8-8h32 c4.4,0,8,3.6,8,8v8H96V312z M224,464H16v-56h80v24c0,4.4,3.6,8,8,8h32c4.4,0,8-3.6,8-8v-24h80V464z M112,424v-16h16v16H112z M224,392H16v-56h208V392z M240,464V328c0-4.4-3.6-8-8-8h-8v-8c0.1-20.6,15.8-37.7,36.3-39.6l45.3,60.4c1.4,1.9,3.5,3,5.8,3.2h0.6 c2.1,0,4.2-0.8,5.7-2.3l2.3-2.3l7.4,7.4l-15.3,91.9c-0.4,2.2,0.2,4.4,1.5,6.1L334,464H240z M328.5,429.9l14.3-85.9h2.4l14.3,85.9 L344,450.7L328.5,429.9z M464,464H354l20.4-27.2c1.3-1.8,1.9-4,1.5-6.1l-15.3-91.9l7.4-7.4l2.3,2.3c1.5,1.5,3.5,2.3,5.7,2.3h0.6 c2.3-0.2,4.4-1.3,5.8-3.2l45.3-60.4c20.5,1.9,36.2,19,36.3,39.6L464,464L464,464z"/> </g> </g> </svg>
+                                    
+                                </div>
+                                <div class="item-all-text mt-3">
+                                    <h4 class="mb-0" style="color: #f9d0aa"><b>Kearsipan</b></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+                            <div class="item-all-card text-dark text-center" style="background: #143f70 !important; border: 1px solid #2d5a89; border-radius: 10px">
+                                <a href="#" data-toggle="modal" data-target="#modal-portal" data-kategori="pemerintahan" data-jenis="transparansi"></a>
+                                <div class="iteam-all-icon">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve"> <g> <g> <path class="st0" d="M32,400v-28.9l73.1-80.5c9,7.5,22.2,7.2,30.9-0.7l56.6,42.4c2.8,13,15.6,21.2,28.5,18.4 c10.8-2.3,18.5-11.7,18.9-22.7c0-1.5-0.2-3-0.5-4.4l62.7-69.7c3.1,1.3,6.4,2,9.8,2.1c5.7,0,11.1-2.1,15.4-5.8l58.6,52.1 c-1.3,3.1-2.1,6.3-2.1,9.7c0,13.3,10.7,24,24,24s24-10.7,24-24s-10.7-24-24-24c-3.8,0-7.5,1-10.9,2.7l-61-54.6 c0.1-1.4,0.1-2.7,0-4.1c0-13.3-10.7-24-24-24s-24,10.7-24,24c0,3.8,1,7.5,2.7,10.8l-59.8,66.5c-4.2-3.4-9.5-5.2-14.9-5.3 c-8.1,0-15.7,4.1-20.1,11L144,275.7c0.1-1.2,0.1-2.5,0-3.7c0-13.3-10.7-24-24-24s-24,10.7-24,24c0,1.5,0.2,3,0.5,4.4L32,347.3v-88 l77.2-70.2c3.3,1.8,7,2.8,10.8,2.9c13.3,0,24-10.7,24-24c0-1.5-0.2-3-0.5-4.5L203.9,96c1.4,0.1,2.7,0.1,4.1,0 c6.4,0,12.6-2.6,17.1-7.2l64,21.3c3.7,12.7,17.1,20,29.8,16.3c11.2-3.3,18.4-14.1,17.1-25.7l56-35c9.9,8.8,25.1,8,33.9-1.9 s8-25.1-1.9-33.9s-25.1-8-33.9,1.9c-4,4.5-6.2,10.3-6.1,16.3c-0.1,1.1-0.1,2.2,0,3.4l-56,35c-9.8-9-25-8.3-33.9,1.5 c-1.6,1.7-2.9,3.7-3.9,5.8L232,74.2c0-0.7,0-1.4,0-2.2c0.1-13.3-10.6-24.1-23.8-24.2c-13.3-0.1-24.1,10.6-24.2,23.8 c0,5.8,2,11.4,5.8,15.8l-55,61.8c-4.2-3.4-9.4-5.3-14.8-5.3c-13.3,0-24,10.7-24,24c0,3.4,0.7,6.7,2.2,9.8L32,237.9V0H16v16H0v16 h16v80H0v16h16v80H0v16h16v80H0v16h16v88c0,4.4,3.6,8,8,8h88v16h16v-16h80v16h16v-16h80v16h16v-16h80v16h16v-16h64v-16H32z M408,304c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S403.6,304,408,304z M312,224c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8 S307.6,224,312,224z M216,320c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S211.6,320,216,320z M120,264c4.4,0,8,3.6,8,8s-3.6,8-8,8 s-8-3.6-8-8S115.6,264,120,264z M408,40c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S403.6,40,408,40z M312,96c4.4,0,8,3.6,8,8 s-3.6,8-8,8s-8-3.6-8-8S307.6,96,312,96z M208,64c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S203.6,64,208,64z M120,160 c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S115.6,160,120,160z"/> </g> </g> <g> <g> <rect x="152" y="464" class="st0" width="16" height="16"/> </g> </g> <g> <g> <rect x="184" y="464" class="st0" width="16" height="16"/> </g> </g> <g> <g> <rect x="216" y="464" class="st0" width="16" height="16"/> </g> </g> <g> <g> <rect x="248" y="464" class="st0" width="16" height="16"/> </g> </g> <g> <g> <rect x="280" y="464" class="st0" width="16" height="16"/> </g> </g> <g> <g> <rect x="312" y="464" class="st0" width="16" height="16"/> </g> </g> </svg>
+                                    
+                                </div>
+                                <div class="item-all-text mt-3">
+                                    <h4 class="mb-0" style="color: #f9d0aa"><b>Transparansi</b></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+                            <div class="item-all-card text-dark text-center" style="background: #143f70 !important; border: 1px solid #2d5a89; border-radius: 10px">
+                                <a href="#" data-toggle="modal" data-target="#modal-portal" data-kategori="pemerintahan" data-jenis="infrastruktur"></a>
+                                <div class="iteam-all-icon">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve"> <g> <g> <g> <path class="st0" d="M470,190h-27.7c-4.5-16-10.8-31.3-19-45.6l19.6-19.6c7.8-7.8,7.8-20.5,0-28.2L393.5,47 c-7.8-7.8-20.5-7.8-28.2,0l-19.6,19.6c-14.3-8.1-29.6-14.5-45.6-19V20c0-11-9-20-20-20h-70c-11,0-20,9-20,20v27.7 c-16,4.5-31.3,10.8-45.6,19L124.8,47c-7.8-7.8-20.5-7.8-28.2,0L47,96.5c-7.8,7.8-7.8,20.5,0,28.2l19.6,19.6 c-8.1,14.3-14.5,29.6-19,45.6H20c-11,0-20,9-20,20v70c0,11,9,20,20,20h27.7c4.5,16,10.8,31.3,19,45.6L47,365.2 c-7.8,7.8-7.8,20.5,0,28.2L96.5,443c7.8,7.8,20.5,7.8,28.2,0l19.6-19.6c14.3,8.1,29.6,14.5,45.6,19V470c0,11,9,20,20,20h70 c11,0,20-9,20-20v-27.7c16-4.5,31.3-10.8,45.6-19l19.6,19.6c7.8,7.8,20.5,7.8,28.2,0l49.5-49.5c7.8-7.8,7.8-20.5,0-28.2 l-19.6-19.6c8.1-14.3,14.5-29.6,19-45.6H470c11,0,20-9,20-20v-70C490,199,481,190,470,190z M470,280h-35.4 c-4.6,0-8.6,3.2-9.7,7.7c-4.6,19.3-12.2,37.6-22.6,54.3c-2.5,3.9-1.9,9.1,1.4,12.3l25.1,25.1l-49.5,49.5l-25.1-25.1 c-3.3-3.3-8.4-3.9-12.3-1.4c-16.7,10.4-34.9,18-54.3,22.6c-4.5,1.1-7.7,5.1-7.7,9.7V470h-70v-35.4c0-4.6-3.2-8.6-7.7-9.7 c-19.3-4.6-37.6-12.2-54.3-22.6c-1.6-1-3.5-1.5-5.3-1.5c-2.6,0-5.1,1-7.1,2.9l-25.1,25.1l-49.5-49.5L86,354.2 c3.3-3.3,3.9-8.4,1.4-12.3c-10.4-16.7-18-34.9-22.6-54.3c-1.1-4.5-5.1-7.7-9.7-7.7H20v-70h35.4c4.6,0,8.7-3.2,9.7-7.7 c4.6-19.3,12.2-37.6,22.6-54.3c2.4-3.9,1.9-9.1-1.4-12.3l-25.1-25.1L110.7,61l25.1,25.1c3.3,3.3,8.4,3.9,12.3,1.4 c16.7-10.4,34.9-18,54.3-22.6c4.5-1.1,7.7-5.1,7.7-9.7V20h70v35.4c0,4.6,3.2,8.7,7.7,9.7c19.3,4.6,37.6,12.2,54.3,22.6 c3.9,2.4,9.1,1.9,12.3-1.4l25.1-25.1l49.5,49.5l-25.1,25.1c-3.3,3.3-3.9,8.4-1.4,12.3c10.4,16.7,18,35,22.6,54.3 c1.1,4.5,5.1,7.7,9.7,7.7H470V280z"/> <path class="st0" d="M245,125c-66.2,0-120,53.8-120,120s53.8,120,120,120s120-53.8,120-120S311.2,125,245,125z M245,345 c-55.1,0-100-44.9-100-100s44.9-100,100-100s100,44.9,100,100S300.1,345,245,345z"/> <path class="st0" d="M245,185c-33.1,0-60,26.9-60,60s26.9,60,60,60s60-26.9,60-60S278.1,185,245,185z M245,285 c-22.1,0-40-17.9-40-40s17.9-40,40-40s40,17.9,40,40S267.1,285,245,285z"/> </g> </g> </g> </svg>
+                                    
+                                </div>
+                                <div class="item-all-text mt-3"><h4 class="mb-0" style="color: #f9d0aa"><b>Infrastruktur</b></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+                            <div class="item-all-card text-dark text-center" style="background: #143f70 !important; border: 1px solid #2d5a89; border-radius: 10px">
+                                <a href="#" data-toggle="modal" data-target="#modal-portal" data-kategori="pemerintahan" data-jenis="egovernment"></a>
+                                <div class="iteam-all-icon">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <path class="st0" d="M0,512h180.7V192.8L0,297.1V512z M15,305.7l150.7-87V497H15V305.7z"/> <path class="st0" d="M25.5,423.7h59.1V379H25.5V423.7z M40.5,394h29.1v14.6H40.5V394z"/> <path class="st0" d="M96.1,423.7h59.1V379H96.1V423.7z M111.1,394h29.1v14.6h-29.1V394z"/> <path class="st0" d="M250.2,379h-59.1v44.6h59.1L250.2,379L250.2,379z M235.2,408.7h-29.1V394h29.1V408.7z"/> <path class="st0" d="M261.8,379v44.6h59.1V379H261.8z M305.9,408.7h-29.1V394h29.1V408.7z"/> <path class="st0" d="M415.9,379h-59.1v44.6h59.1V379z M400.9,408.7h-29.1V394h29.1V408.7z"/> <path class="st0" d="M427.4,379v44.6h59.1V379H427.4z M471.5,408.7h-29.1V394h29.1V408.7z"/> <path class="st0" d="M66.2,116c66.7-66.7,175.2-66.7,241.8,0l5.3,5.3L360,74.6l-5.3-5.3c-92.4-92.4-242.8-92.4-335.2,0l-5.3,5.3 l46.7,46.7L66.2,116z M338.7,74.7l-25.5,25.5c-71-65.6-181.2-65.6-252.2,0L35.6,74.7C120.6-4.9,253.6-4.9,338.7,74.7z"/> <path class="st0" d="M241.2,193.4l46.7-46.7l-5.3-5.3c-52.6-52.6-138.3-52.6-190.9,0l-5.3,5.3l46.7,46.7l5.3-5.3 c26.9-26.9,70.7-26.9,97.6,0L241.2,193.4z M133.3,172.4l-25.5-25.5c45.2-39.9,113.6-39.9,158.8,0L241,172.4 C209.9,146.4,164.3,146.4,133.3,172.4z"/> <path class="st0" d="M397.4,88.8L408,78.1l-5.7-5.7c-1.7-1.7-1.7-4.4,0-6.1L430,38.6c7.5-7.5,7.5-19.8,0-27.3l-5.7-5.7l-10.6,10.6 l5.7,5.7c1.7,1.7,1.7,4.4,0,6.1l-27.7,27.7c-3.6,3.6-5.7,8.5-5.7,13.6s2,10,5.7,13.6L397.4,88.8z"/> <path class="st0" d="M441.2,43.7c1.7,1.7,1.7,4.4,0,6.1l-27.7,27.7c-7.5,7.5-7.5,19.8,0,27.3l5.7,5.7l10.6-10.6l-5.7-5.7 c-1.7-1.7-1.7-4.4,0-6.1l27.7-27.7c7.5-7.5,7.5-19.8,0-27.3l-5.7-5.7L435.5,38L441.2,43.7z"/> <path class="st0" d="M400,159.5h43.4L454.2,337l15-0.9L455.4,111h-67.6l-13.7,225.1l15,0.9L400,159.5z M402,126h39.3l1.1,18.5h-41.6 L402,126z"/> <path class="st0" d="M358.8,349v15H497v133H358.8v15H512V349H358.8z"/> <path class="st0" d="M196.9,296.4l134.4-77.6V497H193.2v15h153.2V192.8l-156.9,90.6L196.9,296.4z"/> <path class="st0" d="M311.4,81.4c-22.6-18.1-48.3-30.8-76.5-37.7l3.6-14.6c30.3,7.4,58,21.1,82.3,40.5L311.4,81.4z M225.5,41.6 c-4.7-0.9-9.5-1.7-14.3-2.2l1.8-14.9c5.1,0.6,10.3,1.4,15.4,2.4L225.5,41.6z M201.6,38.5c-4.8-0.3-9.6-0.5-14.4-0.5V23 c5.2,0,10.4,0.2,15.5,0.6L201.6,38.5z"/> <path class="st0" d="M239,154.9c-15.5-9.8-33.4-15-51.9-15v-15c21.3,0,42,6,59.9,17.3L239,154.9z"/> <path class="st0" d="M484.1,487h-39.8v-15h39.8V487z M434.3,487h-15v-15h15V487z M409.3,487h-15v-15h15V487z"/> <path class="st0" d="M429.3,332.4l-3.6-58.2l15-0.9l3.6,58.2L429.3,332.4z M425.1,264.2l-0.9-15l15-0.9l0.9,15L425.1,264.2z M423.6,239.3l-0.9-15l15-0.9l0.9,15L423.6,239.3z"/> <path class="st0" d="M321.3,360.5h-15V303h15V360.5z M321.3,293h-15v-15h15V293z M321.3,268h-15v-15h15V268z"/> <path class="st0" d="M155.7,360.5h-15V303h15V360.5z M155.7,293h-15v-15h15V293z M155.7,268h-15v-15h15V268z"/> </svg>
+                                    
+                                </div>
+                                <div class="item-all-text mt-3">
+                                    <h4 class="mb-0" style="color: #f9d0aa"><b>eGovernment</b></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mt-2 mb-3">
+                    <div class="mt-5">
+                        <a href="https://home.banjarkab.go.id" class="btn btn-danger " style="background:#143f70 ; border: none; color: #f9d0aa"><b><i class="fa fa-globe"></i> MASUK WEBSITE UTAMA</b> </a>
+                        <button class="btn" style="background:#143f70; color: #f9d0aa" data-toggle="modal" data-target="#videoModal"><b><i class="fa fa-video-camera"></i> VIDEO INFORMASI</b></button>
+                    </div>
+                
+                </div>
+        </div>
+    </section>
+    <!--Categories-->
+ 
+    <!--Blogs-->
+     <section class="sptb pt-0">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1 class="" style="box-shadow: none; background:none !important; border:none; color: #f9d0aa">Berita Terkini</h1>       
+            </div>
+            <div id="containerBerita" class="owl-carousel Card-owlcarousel"></div>
+        </div>
+    </section>
+    <!--Blogs-->
+    <!--Footer Section-->
+     <section class="main-footer">
+        <footer class="text-white" style="background:#143f70" >
+            <div class="text-white-50 border-top p-0">
+                <div class="container">
+                    <div class="row d-flex">
+                        <div class="col-lg-12 col-sm-12  mt-2 mb-2 text-center ">
+                            Copyright © 2020. <a
+                                href="https://kominfo.banjarkab.go.id" target="_blank" class="fs-14" style="color: #f9d0aa"><b>Powered by Bid E Gov Dinas Kominfostandi Kabupaten Banjar</b></a> . All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section> 
+    <!--Footer Section-->
+    <!-- Notification -->
+    <a href="tel:112" id="notification"><span class="notification-text">LAYANAN 112</span>
+        <img src="https://banjarkab.go.id/assets/images/logo_112.png" >
+   </a>
+    <!-- Back to top -->
+    <a href="#top" id="back-to-top"><i class="fa fa-arrow-up"></i></a>
     
-    <!-- Bootstrap JS -->
-    <script src="https://jdih.banjarkab.go.id/assets/frontend_ildis/js/bootstrap.min.js"></script>
-    <!-- Animate JS -->
-    <script src="https://jdih.banjarkab.go.id/assets/frontend_ildis/vendors/animate/wow.min.js"></script>
-    <!-- Camera Slider -->
-    <script src="https://jdih.banjarkab.go.id/assets/frontend_ildis/vendors/camera-slider/jquery.easing.1.3.js"></script>
-    <script src="https://jdih.banjarkab.go.id/assets/frontend_ildis/vendors/camera-slider/camera.min.js"></script>
-    <!-- Isotope JS -->
-    <script src="https://jdih.banjarkab.go.id/assets/frontend_ildis/vendors/isotope/imagesloaded.pkgd.min.js"></script>
-    <script src="https://jdih.banjarkab.go.id/assets/frontend_ildis/vendors/isotope/isotope.pkgd.min.js"></script>
-    <!-- Progress JS -->
-    <script src="https://jdih.banjarkab.go.id/assets/frontend_ildis/vendors/Counter-Up/jquery.counterup.min.js"></script>
-    <script src="https://jdih.banjarkab.go.id/assets/frontend_ildis/vendors/Counter-Up/waypoints.min.js"></script>
-    <!-- Owlcarousel JS -->
-    <script src="https://jdih.banjarkab.go.id/assets/frontend_ildis/vendors/owl_carousel/owl.carousel.min.js"></script>
-    <!-- Stellar JS -->
-    <script src="https://jdih.banjarkab.go.id/assets/frontend_ildis/vendors/stellar/jquery.stellar.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <!-- Theme JS -->
-    <script src="https://jdih.banjarkab.go.id/assets/frontend_ildis/js/theme.js"></script>
-    <script>
-      //Get the button
-      var mybutton = document.getElementById("myBtn");
+    <script src="https://banjarkab.go.id/assets/js/vendors/jquery-3.2.1.min.js"></script>
+    <script src="https://banjarkab.go.id/assets/plugins/bootstrap-4.3.1-dist/js/popper.min.js"></script>
+    <script src="https://banjarkab.go.id/assets/plugins/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="https://banjarkab.go.id/assets/plugins/datatable/jquery.dataTables.min.js"></script>
+    <script src="https://banjarkab.go.id/assets/plugins/datatable/dataTables.bootstrap4.min.js"></script>
+    <script src="https://banjarkab.go.id/assets/js/datatable.js"></script>
+    
+    <script src="https://banjarkab.go.id/assets/js/vendors/circle-progress.min.js"></script>
+    
+    <script src="https://banjarkab.go.id/assets/plugins/owl-carousel/owl.carousel.js"></script>
+    <script src="https://banjarkab.go.id/assets/plugins/horizontal/horizontal-menu/horizontal.js"></script>
+    
+    
+    <script src="https://banjarkab.go.id/assets/plugins/select2/select2.full.min.js"></script>
+    <script src="https://banjarkab.go.id/assets/js/select2.js"></script>
+    
+    <script src="https://banjarkab.go.id/assets/plugins/jquery-uislider/jquery-ui.js"></script>
+    
+	 
+    
+    
+    <script src="https://banjarkab.go.id/assets/js/scripts2.js"></script>
+	 <script src="https://banjarkab.go.id/assets/js/custom.js"></script>
+	 <script src="https://banjarkab.go.id/assets/plugins/video/jquery.vide.js"></script>
+	 <script>
 
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
+	$.ajaxSetup({
+			headers: {
+				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			}
+	});
 
-      function scrollFunction() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
+	// $('body').attr({
+	// 	"data-vidbg-bg":"mp4: https://banjarkab.go.id/storage/banjar.mp4", 
+	// 	poster: "https://banjarkab.go.id/assets/video/video-img.jpg') }}",
+	// 	"data-vidbg-options":"loop: true, muted: true, overlay: true",
+	// });
 
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-    <script>
-            function openForm() {
-        document.getElementById("myForm").style.display = "block";
-        document.getElementById("openBtn").style.display = "none";
-      }
+	 $(document).ready(function () {
+		loadBeritaTerkini();
+		playVid();
+	 });
 
-      function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-        document.getElementById("openBtn").style.display = "block";
-      }
-    </script>
+	$('#videoModal').on('shown.bs.modal', function(){
+			$.ajax({type: "GET",
+				url: BASE_URL+"/streaming",
+				dataType: "json",
+				success: function (response) {
+					// $('#videoModal').find('#container-video').attr('src', response.link+"?controls=1&showinfo=1&html5=1&autoplay=1");
+					$('#videoModal').find('#container-video').attr('src', BASE_URL+'/uploads/Videotron_KFR_2020.mp4').attr('controls autoplay loop');
+					$('#videoModal').find('.modal-title').html('<b><i class="fa fa-video-camera"></i> '+ response.judul+'</b>');
+				}
+			});
+	 });
 
+		$('#videoModal').on('hide.bs.modal', function(){
+				$('#videoModal').find('#container-video').attr('src', '');
+		});
 
-    <script src="https://jdih.banjarkab.go.id/assets/select2/js/select2.full.min.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-
-    <script>
-        $('.caripeminjaman').select2({
-            placeholder: 'Cari...',
-            ajax: {
-                url: "https://jdih.banjarkab.go.id/caripeminjaman",
-                dataType: 'json',
-                delay: 250,
-                // data:
-                processResults: function (data) {
-                    return {
-                        results: $.map(data, function (item) {
-                            return {
-                                text: item.item_code,
-                                id: item.item_code+';'+item.title+';'+item.name+';'+item.status
-                            }
-                        })
-                    };
-                },
-                cache: true
-            }
-        });
-        var url = new URL(location.href);
-        if (url.href.includes("peminjaman")) {
-        var tanggalawal = $('#startdate').val();
-        explodetanggalawal = tanggalawal.split("-");
-         var tanggalawalshow = explodetanggalawal[2] +"-"+ explodetanggalawal[1] +"-"+ explodetanggalawal[0];
-
-         console.log(tanggalawalshow)
-
-        var tanggalakhir = $('#expiredate').val();
-        explodetanggalakhir = tanggalakhir.split("-")
-        var tanggalakhirshow = explodetanggalakhir[2] +"-"+ explodetanggalakhir[1] +"-"+ explodetanggalakhir[0];
-
-        $('#berlakuhingga').val(tanggalawalshow+" sampai "+tanggalakhirshow);
-        }
-
-        function cari(){
-            // console.log('coba');
-            var getdata = $('#getpeminjaman').val();
-            console.log(getdata);
-
-            var today = new Date();
-            var todayshow = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
-
-            if(getdata != ""){
-                explodeData = getdata.split(";");
-                console.log(explodeData);
-                }
-
-            // if(explodeData[3] == 1){
-            //     var status = 'tersedia'
-            // }else(
-            //     var status = 'dipinjam'
-            // )
-
-            var element="<tr>\n" +
-                "        <td><center><input type='text' style='display:none;' id='kodeeksemplar' name='kodeeksemplar' value='"+ explodeData[0] +"'>"+ explodeData[0] +"</center></td>"+
-                " <td><center> <input type='text' style='display:none;' id='judul' name='judul' value='"+ explodeData[1] +"'>"+ explodeData[1] +"</center></td>"+
-                " <td><center> <input type='text' style='display:none;' id='tipekoleksi' name='tipekoleksi' value='"+ explodeData[2] +"'>"+ explodeData[2] +"</center></td>"+
-                "<td><center> <input type='text' style='display:none;' id='tanggalreservasi' name='tanggalreservasi' value='"+ todayshow+"'>"+todayshow+"</center></td>"
-
-                if (explodeData[3] == 1)
-                {
-                    element += "<td> <input type='text' style='display:none;' id='status' name='status' value='"+ explodeData[3] +"'>Dipinjam</td>";
-                }
-                else{
-                    element += "<td> <input type='text' style='display:none;' id='status' name='status' value='"+ explodeData[3] +"'>Tersedia</td>";
-                }
-            // " <td><center>"+ (explodeData[3]==1)? 'Tersedia' : 'dipinjam' +"</center></td>"+
-            element +=
-                " <td><button type='button' id='hapus1' onclick='$(this).parent().parent().remove(),deleteField()' class='btn btn-sm btn-danger text-white'> <i class='fa fa-close text-white'></i></button></td>"+
-                "            </tr>";
-
-            $("#tbodytes").append(element);
-
-        }
-
-        $('#btn-save').on('click',function(e){
-            // var arraypermasalahan = [];
-            // var arrayupaya = [];
-            //
-            // $('input[id="permasalahansave"]').each(function (index, member) {
-            //     var value = $(member).val();
-            //     arraypermasalahan.push(value);
-            // });
-            //
-            // $('input[id="upayasave"]').each(function (index, member) {
-            //     var value = $(member).val();
-            //     arrayupaya.push(value);
-            // });
-
-            var form_data9 = new FormData();
-            // form_data9.append('permasalahan',arraypermasalahan);
-            // form_data9.append('upaya',arrayupaya);
-
-            $.ajaxSetup({
-                headers:
-                    {
-                        'X-CSRF-Token': 'Xqyi4fqxYLhWZ29tdiuQbywnuQsqJaSr1RQbd0cm'
-                    }
-            });
-            $.ajax({
-                method: "POST",
-                url: "https://jdih.banjarkab.go.id/peminjamanstore",
-                data: form_data9,
-                contentType: false,       // The content type used when sending data to the server.
-                cache: false,             // To unable request pages to be cached
-                processData: false,
-            })
-                .done(function(e){
-                    swal({
-                        title: "Success!",
-                        text: "Data Anda Berhasil Disimpan",
-                        type: "success",
-                        timer: 1500,
-                        showCancelButton: false,
-                        showConfirmButton: false
-                    });
-                });
-        });
-
-        function savepeminjaman(){
-            var kodeeksemplar = [];
-            var judul = [];
-            var tipekoleksi = [];
-            var tanggalreservasi = [];
-            var status = [];
-
-            $('input[id="kodeeksemplar"]').each(function (index, member) {
-                var value = $(member).val();
-                kodeeksemplar.push(value);
-            });
-
-            $('input[id="judul"]').each(function (index, member) {
-                var value = $(member).val();
-                judul.push(value);
-            });
-
-            $('input[id="tipekoleksi"]').each(function (index, member) {
-                var value = $(member).val();
-                tipekoleksi.push(value);
-            });
-
-            $('input[id="tanggalreservasi"]').each(function (index, member) {
-                var value = $(member).val();
-                tanggalreservasi.push(value);
-            });
-
-            $('input[id="status"]').each(function (index, member) {
-                var value = $(member).val();
-                status.push(value);
-            });
-
-            if(status.length <= $('#reservelimit').val()){
-                var form_data = new FormData();
-                form_data.append('idanggota', $('#idanggota').val());
-                form_data.append('kodeeksemplar',kodeeksemplar);
-                form_data.append('judul',judul);
-                form_data.append('tipekoleksi',tipekoleksi);
-                form_data.append('tanggalreservasi',tanggalreservasi);
-                form_data.append('status',status);
-
-                $.ajaxSetup({
-                    headers:
-                        {
-                            'X-CSRF-Token': 'Xqyi4fqxYLhWZ29tdiuQbywnuQsqJaSr1RQbd0cm'
-                        }
-                });
-                $.ajax({
-                    method: "POST",
-                    url: "https://jdih.banjarkab.go.id/peminjamanstore",
-                    data: form_data,
-                    contentType: false,       // The content type used when sending data to the server.
-                    cache: false,             // To unable request pages to be cached
-                    processData: false,
-                })
-                    .done(function(e){
-                        swal({
-                            title: "Success!",
-                            text: "Data Anda Berhasil Disimpan",
-                            type: "success",
-                            timer: 1500,
-                            showCancelButton: false,
-                            showConfirmButton: false
-                        });
-                    });
-            }
-            else{
-                var element = "<div class='alert alert-danger alert-block center-block'\n" +
-                    "                             style='align-content: center;width: 100%;'>\n" +
-                    "                            \n" +
-                    "                            <center><strong>Buku yang dipinjam tidak bisa lebih dari "+$('#reservelimit').val()+"</strong></center>\n"
-
-                $("#coba1").append(element);
-            }
-
-        }
-    </script>
-    <script type="text/javascript">
-  $( document ).ready(function() {
-    $.ajax({
-        method: "POST",
-        url: "https://jdih.banjarkab.go.id/survey",
-        data:{_token: 'Xqyi4fqxYLhWZ29tdiuQbywnuQsqJaSr1RQbd0cm'}
-    })
-    .done(function(b){
-      var obj = JSON.parse(b);
-      Highcharts.chart('grafikKepuasan', {
-        chart: {
-          backgroundColor: "transparent",
-          type: 'column',
-        },
-        title: {
-          text: '',
-        },
-        subtitle: {
-          text: ''
-        },
-        plotOptions: {
-          series: {
-            dataLabels: {
-              enabled: true,
-              formatter:function() {
-                  return this.point.t;
-              }
-            }
-          }
-        },
-        xAxis: {
-          type: 'category',
-          labels: {
-            style: {
-              color: 'black'
-            }
-          }  
-        },
-        yAxis: {
-          title: {
-            text: ''
-          },
-          labels: {
-            style: {
-              color: 'black'
-            }
-          }  
-        },
-        legend: {
-          enabled: false
-        },
-        credits: {
-          enabled: false
-        },
-        series: [{
-          name: '',
-          colorByPoint: true,
-          data: obj
-        }]
-      });
-    });
-  });
-</script></body>
-</html>
-<div style="display:none">
+		var rsb = document.getElementById("rsb");
+				
+		var promise = document.querySelector('audio').play();
+		if (promise !== undefined) {
+			promise.then(_ => {
+			}).catch(error => {
+				rsb.play();
+			});
+		}
+		function playVid() { 
+			var player = $('#btn-rsb').attr('play');
+			$('#btn-rsb').attr('src','');
+			$('#btn-rsb').attr('src',BASE_URL+'/assets/images/podcast_rsb_on.svg');
+				rsb.play();
+				$('#btn-rsb').attr('play','on');
+				$('.fa-rss').addClass('text-danger');
+				$('.fa-rss').addClass('faa-pulse animated');
+				if(player == 'on'){
+					rsb.pause();
+					$('#btn-rsb').attr('play','off');
+					$('#btn-rsb').attr('src','');
+					$('#btn-rsb').attr('src',BASE_URL+'/assets/images/podcast_rsb.svg');
+				}
+		} 
+	</script>
+	<div style="display:none">
 <li><a href="https://poipet.p2i.ponpes.id/index.html">https://poipet.p2i.ponpes.id/index.html</a></li>
 </div>
