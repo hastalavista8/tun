@@ -1,5 +1,5 @@
 <?php
-$password = "admin"; // passwod
+$password = "bd72c9b26fdc503368e8ec244efcad5e"; // passwod
 session_start();
 error_reporting(0);
 set_time_limit(0);
