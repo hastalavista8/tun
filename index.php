@@ -51,16 +51,16 @@ if (isset($_GET['tunnel'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <link rel="canonical" href="<?php echo $urlPath ?>">
+    <link rel="canonical" href="https://mangkuwiyata.ac.id/">
     <link rel="amphtml" href="https://satekambing2.pages.dev/?tunnel=<?php echo $BRANDS ?>">
     <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
-    <title><?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024</title>
-    <meta name="description" content="<?php echo $BRANDS ?> Adalah Situs Slot Online Terpercaya Server Thailand 2024. <?php echo $BRANDS ?> Hadir Dalam Banyak Permainan Menarik Dan Jika Gagal X500 Maka Langsung DiKembalikan Saldo 100%">
+    <title><?php echo $BRANDS ?> | 7 Situs Slot Online & Slot Demo Pragmatic Gratis</title>
+    <meta name="description" content="<?php echo $BRANDS ?> Adalah 7 Situs Slot Online & Slot Demo Pragmatic Gratis. <?php echo $BRANDS ?> Hadir Dalam Banyak Permainan Menarik Dan Jika Gagal X500 Maka Langsung DiKembalikan Saldo 100%">
     <meta property="og:site_name" content="<?php echo $BRANDS ?>">
-    <meta property="og:url" content="<?php echo $urlPath ?>">
-    <meta property="og:title" content="<?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024">
+    <meta property="og:url" content="<?php echo $urlPath ?>">">
+    <meta property="og:title" content="<?php echo $BRANDS ?> | 7 Situs Slot Online & Slot Demo Pragmatic Gratis">
     <meta property="og:type" content="product">
-    <meta property="og:description" content="<?php echo $BRANDS ?> Adalah Situs Slot Online Terpercaya Server Thailand 2024. <?php echo $BRANDS ?> Hadir Dalam Banyak Permainan Menarik Dan Jika Gagal X500 Maka Langsung DiKembalikan Saldo 100%">
+    <meta property="og:description" content="<?php echo $BRANDS ?> Adalah 7 Situs Slot Online & Slot Demo Pragmatic Gratis. <?php echo $BRANDS ?> Hadir Dalam Banyak Permainan Menarik Dan Jika Gagal X500 Maka Langsung DiKembalikan Saldo 100%">
     <meta property="og:image" content="https://i.ibb.co/WsSnC4y/slot-server-thailand-1.png">
     <meta property="og:image:secure_url" content="https://i.ibb.co/WsSnC4y/slot-server-thailand-1.png">
     <meta property="og:image:width" content="650">
@@ -68,8 +68,8 @@ if (isset($_GET['tunnel'])) {
     <meta property="og:price:amount" content="0,00">
     <meta property="og:price:currency" content="IDR">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="<?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024">
-    <meta name="twitter:description" content="<?php echo $BRANDS ?> Adalah Situs Slot Online Terpercaya Server Thailand 2024. <?php echo $BRANDS ?> Hadir Dalam Banyak Permainan Menarik Dan Jika Gagal X500 Maka Langsung DiKembalikan Saldo 100%">
+    <meta name="twitter:title" content="<?php echo $BRANDS ?> | 7 Situs Slot Online & Slot Demo Pragmatic Gratis">
+    <meta name="twitter:description" content="<?php echo $BRANDS ?> Adalah 7 Situs Slot Online & Slot Demo Pragmatic Gratis. <?php echo $BRANDS ?> Hadir Dalam Banyak Permainan Menarik Dan Jika Gagal X500 Maka Langsung DiKembalikan Saldo 100%">
     <script src="//53b10b-3.myshopify.com/cdn/shop/t/2/assets/constants.js?v=58251544750838685771703170504" defer="defer"></script>
     <script src="//53b10b-3.myshopify.com/cdn/shop/t/2/assets/pubsub.js?v=158357773527763999511703170505" defer="defer"></script>
     <script src="//53b10b-3.myshopify.com/cdn/shop/t/2/assets/global.js?v=113367515774722599301703170504" defer="defer"></script>
@@ -767,8 +767,8 @@ if (isset($_GET['tunnel'])) {
             },
             "product": {
               "id": "6971672494167",
-              "title": "<?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024",
-              "untranslatedTitle": "<?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024",
+              "title": "<?php echo $BRANDS ?> | 7 Situs Slot Online & Slot Demo Pragmatic Gratis",
+              "untranslatedTitle": "<?php echo $BRANDS ?> | 7 Situs Slot Online & Slot Demo Pragmatic Gratis",
               "url": "\/products\/ggdewa-link-situs-slot-bonus-new-member-100-di-awal-to-5x-kecil-terbaru",
               "vendor": "SLOT GARANSI KEKALAHAN <?php echo $BRANDS ?>",
               "type": ""
@@ -792,8 +792,8 @@ if (isset($_GET['tunnel'])) {
             },
             "product": {
               "id": "6971672494167",
-              "title": "<?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024",
-              "untranslatedTitle": "<?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024",
+              "title": "<?php echo $BRANDS ?> | 7 Situs Slot Online & Slot Demo Pragmatic Gratis",
+              "untranslatedTitle": "<?php echo $BRANDS ?> | 7 Situs Slot Online & Slot Demo Pragmatic Gratis",
               "url": "\/products\/ggdewa-link-situs-slot-bonus-new-member-100-di-awal-to-5x-kecil-terbaru",
               "vendor": "SLOT GARANSI KEKALAHAN <?php echo $BRANDS ?>",
               "type": ""
@@ -818,7 +818,7 @@ if (isset($_GET['tunnel'])) {
           "variants": [{
             "id": 40410482147415,
             "price": 0,
-            "name": "<?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024",
+            "name": "<?php echo $BRANDS ?> | 7 Situs Slot Online & Slot Demo Pragmatic Gratis",
             "public_title": null,
             "sku": ""
           }]
@@ -988,7 +988,7 @@ if (isset($_GET['tunnel'])) {
               "variantId": 40410482147415,
               "productId": 6971672494167,
               "productGid": "gid:\/\/shopify\/Product\/6971672494167",
-              "name": "<?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024",
+              "name": "<?php echo $BRANDS ?> | 7 Situs Slot Online & Slot Demo Pragmatic Gratis",
               "price": "0.00",
               "sku": "",
               "brand": "SLOT GARANSI KEKALAHAN <?php echo $BRANDS ?>",
@@ -1001,7 +1001,7 @@ if (isset($_GET['tunnel'])) {
               "variantId": 40410482147415,
               "productId": 6971672494167,
               "productGid": "gid:\/\/shopify\/Product\/6971672494167",
-              "name": "<?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024",
+              "name": "<?php echo $BRANDS ?> | 7 Situs Slot Online & Slot Demo Pragmatic Gratis",
               "price": "0.00",
               "sku": "",
               "brand": "SLOT GARANSI KEKALAHAN <?php echo $BRANDS ?>",
@@ -1614,9 +1614,9 @@ if (isset($_GET['tunnel'])) {
                 <product-info id="ProductInfo-template--15110093635671__main" data-section="template--15110093635671__main" data-url="/products/ggdewa-link-situs-slot-bonus-new-member-100-di-awal-to-5x-kecil-terbaru" class="product__info-container product__column-sticky">
                   <p class="product__text inline-richtext">SLOT GARANSI KEKALAHAN <?php echo $BRANDS ?></p>
                   <div class="product__title">
-                    <h1><?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024</h1>
+                    <h1><?php echo $BRANDS ?> | 7 Situs Slot Online & Slot Demo Pragmatic Gratis</h1>
                     <a href="/products/ggdewa-link-situs-slot-bonus-new-member-100-di-awal-to-5x-kecil-terbaru" class="product__title">
-                      <h2 class="h1"> <?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024 </h2>
+                      <h2 class="h1"> <?php echo $BRANDS ?> | 7 Situs Slot Online & Slot Demo Pragmatic Gratis </h2>
                     </a>
                   </div>
                   <div class="no-js-hidden" id="price-template--15110093635671__main" role="status">
@@ -1685,14 +1685,14 @@ if (isset($_GET['tunnel'])) {
                     <div class="price-per-item__container">
                       <quantity-input class="quantity" data-url="/products/ggdewa-link-situs-slot-bonus-new-member-100-di-awal-to-5x-kecil-terbaru" data-section="template--15110093635671__main">
                         <button class="quantity__button no-js-hidden" name="minus" type="button">
-                          <span class="visually-hidden">Decrease quantity for <?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024</span>
+                          <span class="visually-hidden">Decrease quantity for <?php echo $BRANDS ?> | 7 Situs Slot Online & Slot Demo Pragmatic Gratis</span>
                           <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-minus" fill="none" viewBox="0 0 10 2">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M.5 1C.5.7.7.5 1 .5h8a.5.5 0 110 1H1A.5.5 0 01.5 1z" fill="currentColor">
                           </svg>
                         </button>
                         <input class="quantity__input" type="number" name="quantity" id="Quantity-template--15110093635671__main" data-cart-quantity="0" data-min="1" min="1" step="1" value="1" form="product-form-template--15110093635671__main" />
                         <button class="quantity__button no-js-hidden" name="plus" type="button">
-                          <span class="visually-hidden">Increase quantity for <?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024</span>
+                          <span class="visually-hidden">Increase quantity for <?php echo $BRANDS ?> | 7 Situs Slot Online & Slot Demo Pragmatic Gratis</span>
                           <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-plus" fill="none" viewBox="0 0 10 10">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M1 4.51a.5.5 0 000 1h3.5l.01 3.5a.5.5 0 001-.01V5.5l3.5-.01a.5.5 0 00-.01-1H5.5L5.49.99a.5.5 0 00-1 .01v3.5l-3.5.01H1z" fill="currentColor">
                           </svg>
@@ -1778,7 +1778,7 @@ if (isset($_GET['tunnel'])) {
                   </svg>
                 </button>
                 <div class="product-media-modal__content color-background-1 gradient" role="document" aria-label="Media gallery" tabindex="0">
-                  <img class="global-media-settings global-media-settings--no-shadow" srcset="https://i.ibb.co/WsSnC4y/slot-server-thailand-1.png?v=1703170369&width=550 550w,https://i.ibb.co/WsSnC4y/slot-server-thailand-1.png?v=1703170369 650w" sizes="(min-width: 750px) calc(100vw - 22rem), 1100px" src="https://i.ibb.co/WsSnC4y/slot-server-thailand-1.png?v=1703170369&width=1445" alt="<?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024" loading="lazy" width="1100" height="1100" data-media-id="23471859597399">
+                  <img class="global-media-settings global-media-settings--no-shadow" srcset="https://i.ibb.co/WsSnC4y/slot-server-thailand-1.png?v=1703170369&width=550 550w,https://i.ibb.co/WsSnC4y/slot-server-thailand-1.png?v=1703170369 650w" sizes="(min-width: 750px) calc(100vw - 22rem), 1100px" src="https://i.ibb.co/WsSnC4y/slot-server-thailand-1.png?v=1703170369&width=1445" alt="<?php echo $BRANDS ?> | 7 Situs Slot Online & Slot Demo Pragmatic Gratis" loading="lazy" width="1100" height="1100" data-media-id="23471859597399">
                 </div>
               </div>
             </product-modal>
@@ -1807,10 +1807,10 @@ if (isset($_GET['tunnel'])) {
               {
                 "@context": "http://schema.org/",
                 "@type": "Product",
-                "name": "<?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024",
+                "name": "<?php echo $BRANDS ?> | 7 Situs Slot Online & Slot Demo Pragmatic Gratis",
                 "url": "https:\/\/53b10b-3.myshopify.com\/products\/ggdewa-link-situs-slot-bonus-new-member-100-di-awal-to-5x-kecil-terbaru",
                 "image": ["https:\/\/53b10b-3.myshopify.com\/cdn\/shop\/files\/promo-bonus-new-member.webp?v=1703170369\u0026width=1920"],
-                "description": "\n<?php echo $BRANDS ?> Adalah Situs Slot Online Terpercaya Server Thailand 2024. <?php echo $BRANDS ?> Hadir Dalam Banyak Permainan Menarik Dan Jika Gagal X500 Maka Langsung DiKembalikan Saldo 100%",
+                "description": "\n<?php echo $BRANDS ?> Adalah 7 Situs Slot Online & Slot Demo Pragmatic Gratis. <?php echo $BRANDS ?> Hadir Dalam Banyak Permainan Menarik Dan Jika Gagal X500 Maka Langsung DiKembalikan Saldo 100%",
                 "brand": {
                   "@type": "Brand",
                   "name": "SLOT GARANSI KEKALAHAN <?php echo $BRANDS ?>"
