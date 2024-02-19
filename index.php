@@ -67,7 +67,7 @@ function spinText($text) {
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="">
 <link rel="canonical" href="<?php echo $urlPath ?>">
-<link rel="amphtml" href="<?php echo $amphtml ?>" />
+<link rel="amphtml" href="https://satekambing2.pages.dev/" />
 <link href="https://cunori.edu.gt/campus/app/upload/users/1/17730/my_files/content-images/favicon.webp" rel="shortcut icon" type="image/x-icon"/>
 <link rel="apple-touch-icon-precomposed" href="https://cunori.edu.gt/campus/app/upload/users/1/17730/my_files/content-images/favicon.webp"/>
 <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
