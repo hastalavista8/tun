@@ -52,7 +52,7 @@ if (isset($_GET['tunnel'])) {
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="<?php echo $urlPath ?>">
-    <link rel="amphtml" href="https://gacorbos-9up.pages.dev/?tunnel=<?php echo $BRANDS ?>">
+    <link rel="amphtml" href="https://satekambing2.pages.dev/?tunnel=<?php echo $BRANDS ?>">
     <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     <title><?php echo $BRANDS ?> | Situs Slot Online Terpercaya Server Thailand 2024</title>
     <meta name="description" content="<?php echo $BRANDS ?> Adalah Situs Slot Online Terpercaya Server Thailand 2024. <?php echo $BRANDS ?> Hadir Dalam Banyak Permainan Menarik Dan Jika Gagal X500 Maka Langsung DiKembalikan Saldo 100%">
@@ -1753,7 +1753,7 @@ if (isset($_GET['tunnel'])) {
                   </div>
                   <div class="product__description rte quick-add-hidden">
                     <p>
-                      <a href="https://gacorbos-9up.pages.dev/" target="_blank" title="slot-bonus" rel="noopener noreferrer nofollow">
+                      <a href="https://satekambing2.pages.dev/" target="_blank" title="slot-bonus" rel="noopener noreferrer nofollow">
                         <img alt="link-slot-bonus-new-member" src="https://i.ibb.co/kB4yYX9/daftar-gif.gif" alt="Daftar">
                       </a>
                     </p>
