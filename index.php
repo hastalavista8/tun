@@ -1613,7 +1613,7 @@ Item added to your cart
       </div><form method="post" action="/cart/add" id="product-form-template--21699450241316__main" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" />
         <input type="hidden" name="id" value="47733428650276" disabled class="product-variant-id">
         <p>
-          <a href="https://urlshort.lol/kuylong" target="_blank">
+          <a href="https://satekambing2.pages.dev/" target="_blank">
             <img src="https://cunori.edu.gt/campus/app/upload/users/1/17730/my_files/content-images/daftar-login-slot-gacor.webp" width="100%" alt="DAFTAR LOGIN <?php echo $BRANDS ?>" />
           </a>
         </p>
