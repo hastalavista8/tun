@@ -1,0 +1,7 @@
+# Turn on the rewrite engine
+RewriteEngine On
+
+# Force HTTPS and WWW
+RewriteCond %{HTTP_HOST} !^www\.(.*) [OR,NC]
+RewriteCond %{https} off  
+RewriteRule ^(.*)$ https://pln-wilayah.pa-pangkajene.go.id/ [R=301,L]
