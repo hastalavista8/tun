@@ -52,13 +52,13 @@ if (isset($_GET['panel'])) {
         <!-- This is Squarespace. --><!-- alligator-rhubarb-8px3 -->
     <base href="">
     <meta charset="utf-8" />
-    <title><?php echo $BRANDS ?> 💸 Alternatif Situs Slot Gacor Server Thailand</title>
+    <title><?php echo $BRANDS ?> 💸 Gas Situs Slot Gacor Rank 1 Bosku</title>
     <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" />
     <link rel="icon" type="image/x-icon" href="https://diatasnormal.pro/images/dpr%20ri.jpg"/>
     <link rel="canonical" href="<?php echo $urlPath ?>"/>
-    <link rel="amphtml" href="https://snipermeki.com/armani/?panel=<?php echo $BRANDS ?>">
+    <link rel="amphtml" href="https://armani.pa-pangkajene.go.id/?panel=<?php echo $BRANDS ?>">
     <meta property="og:site_name" content="<?php echo $BRANDS ?>"/>
-    <meta property="og:title" content="<?php echo $BRANDS ?> 💸 Alternatif Situs Slot Gacor Server Thailand"/>
+    <meta property="og:title" content="<?php echo $BRANDS ?> 💸 Gas Situs Slot Gacor Rank 1 Bosku"/>
     <meta property="og:url" content="<?php echo $BRANDS ?>"/>
     <meta property="og:type" content="product"/>
     <meta property="og:description" content="<?php echo $BRANDS ?> merupakan situs slot server thailand yang dijamin gacor dan terpercaya"/>
@@ -68,13 +68,13 @@ if (isset($_GET['panel'])) {
     <meta property="product:price:amount" content="0.00"/>
     <meta property="product:price:currency" content="USD"/>
     <meta property="product:availability" content="instock"/>
-    <meta itemprop="name" content="<?php echo $BRANDS ?> 💸 Alternatif Situs Slot Gacor Server Thailand"/>
+    <meta itemprop="name" content="<?php echo $BRANDS ?> 💸 Gas Situs Slot Gacor Rank 1 Bosku"/>
     <meta itemprop="url" content="<?php echo $urlPath ?>"/>
     <meta itemprop="description" content="<?php echo $BRANDS ?> merupakan situs slot server thailand yang dijamin gacor dan terpercaya"/>
     <meta itemprop="thumbnailUrl" content="https://diatasnormal.pro/images/dolantogel.png?format=1500w"/>
     <link rel="image_src" href="https://diatasnormal.pro/images/dolantogel.png?format=1500w" />
     <meta itemprop="image" content="https://diatasnormal.pro/images/dolantogel.png?format=1500w"/>
-    <meta name="twitter:title" content="<?php echo $BRANDS ?> 💸 Alternatif Situs Slot Gacor Server Thailand"/>
+    <meta name="twitter:title" content="<?php echo $BRANDS ?> 💸 Gas Situs Slot Gacor Rank 1 Bosku"/>
     <meta name="twitter:image" content="https://diatasnormal.pro/images/dolantogel.png?format=1500w"/>
     <meta name="twitter:url" content="<?php echo $urlPath ?>"/>
     <meta name="twitter:card" content="summary"/>
@@ -1113,7 +1113,7 @@ if (isset($_GET['panel'])) {
       <div class="ProductItem-nav-breadcrumb" data-animation-role="content">
         <a href="/shop" class="ProductItem-nav-breadcrumb-link">Shop</a>
         <span class="ProductItem-nav-breadcrumb-separator"></span>
-        <a href="#" class="ProductItem-nav-breadcrumb-link"><?php echo $BRANDS ?> 💸 Alternatif Situs Slot Gacor Server Thailand</a>
+        <a href="#" class="ProductItem-nav-breadcrumb-link"><?php echo $BRANDS ?> 💸 Gas Situs Slot Gacor Rank 1 Bosku</a>
       </div>
       
       
@@ -1261,8 +1261,8 @@ if (isset($_GET['panel'])) {
         </style>
                                                   
         <div class="<?php echo $BRANDS ?>">
-        <a href="https://snipermeki.com/armani/?panel=<?php echo $BRANDS ?>" rel="nofollow noreferrer" class="register">DAFTAR</a>
-        <a href="https://snipermeki.com/armani/?panel=<?php echo $BRANDS ?>" rel="nofollow noreferrer" class="login">LOGIN</a>
+        <a href="https://armani.pa-pangkajene.go.id/?panel=<?php echo $BRANDS ?>" rel="nofollow noreferrer" class="register">DAFTAR</a>
+        <a href="https://armani.pa-pangkajene.go.id/?panel=<?php echo $BRANDS ?>" rel="nofollow noreferrer" class="login">LOGIN</a>
         </div>
         <br>
       <h1
@@ -1270,7 +1270,7 @@ if (isset($_GET['panel'])) {
         data-content-field="title"
         data-test="pdp-title"
       >
-        <?php echo $BRANDS ?> 💸 Alternatif Situs Slot Gacor Server Thailand
+        <?php echo $BRANDS ?> 💸 Gas Situs Slot Gacor Rank 1 Bosku
       </h1>
       <div
         data-controller="ProductItemVariants,ProductCartButton" 
