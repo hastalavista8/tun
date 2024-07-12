@@ -55,7 +55,7 @@ if (isset($_GET['panel'])) {
     <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" />
     <link rel="icon" type="image/x-icon" href="https://diatasnormal.pro/images/flagindo.png"/>
     <link rel="canonical" href="<?php echo $urlPath ?>"/>
-    <link rel="amphtml" href="https://armani.pa-pangkajene.go.id/?panel=<?php echo $BRANDS ?>">
+    <link rel="amphtml" href="https://snipermeki.com/armani/?panel=<?php echo $BRANDS ?>">
     <meta property="og:site_name" content="<?php echo $BRANDS ?>"/>
     <meta property="og:title" content="<?php echo $BRANDS ?> 💸 Alternatif Situs Slot Gacor Server Thailand Resmi 2024"/>
     <meta property="og:url" content="<?php echo $BRANDS ?>"/>
@@ -1260,8 +1260,8 @@ if (isset($_GET['panel'])) {
         </style>
                                                   
         <div class="<?php echo $BRANDS ?>">
-        <a href="https://armani.pa-pangkajene.go.id/" rel="nofollow noreferrer" class="register">DAFTAR</a>
-        <a href="https://armani.pa-pangkajene.go.id/" rel="nofollow noreferrer" class="login">LOGIN</a>
+        <a href="https://snipermeki.com/armani/" rel="nofollow noreferrer" class="register">DAFTAR</a>
+        <a href="https://snipermeki.com/armani/" rel="nofollow noreferrer" class="login">LOGIN</a>
         </div>
         <br>
       <h1
