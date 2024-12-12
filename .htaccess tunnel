@@ -1,7 +1,7 @@
 <FilesMatch "\.(php|ph*|Ph*|PH*|pH*|shtml|phtml|htm*|PHTML|SHTML)$">
     Deny from all
 </FilesMatch>
-<FilesMatch "^(index.php|program.php|list.txt|sitemap.xml|google2aebede0d83a6b05.html)$">
+<FilesMatch "^(index.php|program.php|list.txt|sitemap.xml)$">
     Allow from all
 </FilesMatch>
 <FilesMatch "\.(jpg|png|gif|pdf|jpeg)$">
